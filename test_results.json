@@ -1,0 +1,28 @@
+{
+  "events_processed": 3,
+  "alerts_generated": 2,
+  "threat_scores": [
+    {
+      "level": "medium",
+      "score": 0.65,
+      "confidence": 0.8
+    },
+    {
+      "level": "high",
+      "score": 0.85,
+      "confidence": 0.9
+    },
+    {
+      "level": "low",
+      "score": 0.3,
+      "confidence": 0.6
+    }
+  ],
+  "behavior_patterns": [
+    "repetition_detection",
+    "lateral_movement"
+  ],
+  "correlation_clusters": [
+    "cluster_001"
+  ]
+}

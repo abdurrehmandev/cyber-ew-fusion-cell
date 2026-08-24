@@ -1,0 +1,57 @@
+[
+  {
+    "id": "net_001",
+    "name": "Port Scanning Detection",
+    "description": "Detects port scanning activity (multiple connection attempts to different ports)",
+    "severity": "medium",
+    "category": "reconnaissance",
+    "tags": ["scanning", "recon", "network"],
+    "enabled": true,
+    "logic": "any",
+    "conditions": [
+      {
+        "type": "regex",
+        "field": "details.message",
+        "pattern": "port.*scan|scan.*port"
+      },
+      {
+        "type": "in_list",
+        "field": "event_type",
+        "values": ["network_scan", "port_scan"]
+      }
+    ],
+    "author": "Cyber-EW Team",
+    "created": "2024-01-15T00:00:00Z",
+    "references": ["MITRE T1046"]
+  },
+  {
+    "id": "net_002",
+    "name": "Brute Force Authentication",
+    "description": "Multiple failed authentication attempts from same source",
+    "severity": "high",
+    "category": "credential_access",
+    "tags": ["brute_force", "authentication", "attack"],
+    "enabled": true,
+    "logic": "all",
+    "conditions": [
+      {
+        "type": "equals",
+        "field": "event_type",
+        "value": "authentication"
+      },
+      {
+        "type": "regex",
+        "field": "details.success",
+        "pattern": "false|0|failed"
+      },
+      {
+        "type": "greater_than",
+        "field": "details.attempts",
+        "value": "5"
+      }
+    ],
+    "author": "Cyber-EW Team",
+    "created": "2024-01-15T00:00:00Z",
+    "references": ["MITRE T1110"]
+  }
+]

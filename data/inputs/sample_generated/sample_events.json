@@ -1,0 +1,2146 @@
+[
+  {
+    "timestamp": "2026-05-29T21:09:24.891812+00:00",
+    "source_ip": "192.168.1.59",
+    "destination_ip": "192.168.10.10",
+    "destination_port": 123,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 3295,
+    "bytes_received": 11104,
+    "details": {
+      "success": true,
+      "service": "web"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:09:39.891812+00:00",
+    "source_ip": "192.168.1.60",
+    "destination_ip": "192.168.20.15",
+    "destination_port": 123,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 1723,
+    "bytes_received": 6915,
+    "details": {
+      "success": true,
+      "service": "ntp"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:09:54.891812+00:00",
+    "source_ip": "192.168.1.75",
+    "destination_ip": "203.0.113.50",
+    "destination_port": 53,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 3480,
+    "bytes_received": 13265,
+    "details": {
+      "success": true,
+      "service": "dns"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:10:09.891812+00:00",
+    "source_ip": "192.168.1.52",
+    "destination_ip": "192.168.10.20",
+    "destination_port": 123,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 1772,
+    "bytes_received": 10385,
+    "details": {
+      "success": true,
+      "service": "ntp"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:10:24.891812+00:00",
+    "source_ip": "192.168.1.21",
+    "destination_ip": "192.168.20.15",
+    "destination_port": 123,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 2007,
+    "bytes_received": 8273,
+    "details": {
+      "success": true,
+      "service": "dns"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:10:39.891812+00:00",
+    "source_ip": "192.168.1.70",
+    "destination_ip": "192.168.20.15",
+    "destination_port": 123,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 2591,
+    "bytes_received": 8878,
+    "details": {
+      "success": true,
+      "service": "dns"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:10:54.891812+00:00",
+    "source_ip": "192.168.1.55",
+    "destination_ip": "8.8.8.8",
+    "destination_port": 53,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 1788,
+    "bytes_received": 1963,
+    "details": {
+      "success": true,
+      "service": "ntp"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:11:09.891812+00:00",
+    "source_ip": "192.168.1.21",
+    "destination_ip": "192.168.10.20",
+    "destination_port": 80,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 548,
+    "bytes_received": 9536,
+    "details": {
+      "success": true,
+      "service": "dns"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:11:24.891812+00:00",
+    "source_ip": "192.168.1.48",
+    "destination_ip": "192.168.10.20",
+    "destination_port": 123,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 3377,
+    "bytes_received": 11131,
+    "details": {
+      "success": true,
+      "service": "web"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:11:39.891812+00:00",
+    "source_ip": "192.168.1.56",
+    "destination_ip": "192.168.20.15",
+    "destination_port": 80,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 3298,
+    "bytes_received": 18399,
+    "details": {
+      "success": true,
+      "service": "ntp"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:11:54.891812+00:00",
+    "source_ip": "192.168.1.61",
+    "destination_ip": "203.0.113.50",
+    "destination_port": 80,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 2287,
+    "bytes_received": 17459,
+    "details": {
+      "success": true,
+      "service": "ntp"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:12:09.891812+00:00",
+    "source_ip": "192.168.1.31",
+    "destination_ip": "192.168.20.15",
+    "destination_port": 53,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 3002,
+    "bytes_received": 19328,
+    "details": {
+      "success": true,
+      "service": "web"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:12:24.891812+00:00",
+    "source_ip": "192.168.1.77",
+    "destination_ip": "8.8.8.8",
+    "destination_port": 443,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 3129,
+    "bytes_received": 18496,
+    "details": {
+      "success": true,
+      "service": "ntp"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:12:39.891812+00:00",
+    "source_ip": "192.168.1.61",
+    "destination_ip": "203.0.113.50",
+    "destination_port": 123,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 3023,
+    "bytes_received": 4475,
+    "details": {
+      "success": true,
+      "service": "dns"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:12:54.891812+00:00",
+    "source_ip": "192.168.1.77",
+    "destination_ip": "1.1.1.1",
+    "destination_port": 123,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 905,
+    "bytes_received": 14600,
+    "details": {
+      "success": true,
+      "service": "ntp"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:13:09.891812+00:00",
+    "source_ip": "192.168.1.73",
+    "destination_ip": "203.0.113.50",
+    "destination_port": 53,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 1869,
+    "bytes_received": 11643,
+    "details": {
+      "success": true,
+      "service": "ntp"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:13:24.891812+00:00",
+    "source_ip": "192.168.1.65",
+    "destination_ip": "8.8.8.8",
+    "destination_port": 443,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 3155,
+    "bytes_received": 5297,
+    "details": {
+      "success": true,
+      "service": "dns"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:13:39.891812+00:00",
+    "source_ip": "192.168.1.60",
+    "destination_ip": "198.51.100.23",
+    "destination_port": 123,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 400,
+    "bytes_received": 7029,
+    "details": {
+      "success": true,
+      "service": "web"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:13:54.891812+00:00",
+    "source_ip": "192.168.1.62",
+    "destination_ip": "192.168.10.20",
+    "destination_port": 123,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 904,
+    "bytes_received": 4660,
+    "details": {
+      "success": true,
+      "service": "web"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:14:09.891812+00:00",
+    "source_ip": "192.168.1.45",
+    "destination_ip": "192.168.10.10",
+    "destination_port": 443,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 774,
+    "bytes_received": 7456,
+    "details": {
+      "success": true,
+      "service": "ntp"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:14:24.891812+00:00",
+    "source_ip": "192.168.1.73",
+    "destination_ip": "203.0.113.50",
+    "destination_port": 443,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 3404,
+    "bytes_received": 13881,
+    "details": {
+      "success": true,
+      "service": "dns"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:14:39.891812+00:00",
+    "source_ip": "192.168.1.65",
+    "destination_ip": "198.51.100.23",
+    "destination_port": 123,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 243,
+    "bytes_received": 17893,
+    "details": {
+      "success": true,
+      "service": "ntp"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:14:54.891812+00:00",
+    "source_ip": "192.168.1.32",
+    "destination_ip": "192.168.10.20",
+    "destination_port": 443,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 3246,
+    "bytes_received": 18095,
+    "details": {
+      "success": true,
+      "service": "web"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:15:09.891812+00:00",
+    "source_ip": "192.168.1.69",
+    "destination_ip": "198.51.100.23",
+    "destination_port": 123,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 3877,
+    "bytes_received": 10203,
+    "details": {
+      "success": true,
+      "service": "web"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:15:24.891812+00:00",
+    "source_ip": "192.168.1.57",
+    "destination_ip": "198.51.100.23",
+    "destination_port": 443,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 2674,
+    "bytes_received": 9231,
+    "details": {
+      "success": true,
+      "service": "ntp"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:15:39.891812+00:00",
+    "source_ip": "192.168.1.35",
+    "destination_ip": "198.51.100.23",
+    "destination_port": 53,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 2962,
+    "bytes_received": 294,
+    "details": {
+      "success": true,
+      "service": "web"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:15:54.891812+00:00",
+    "source_ip": "192.168.1.25",
+    "destination_ip": "192.168.20.15",
+    "destination_port": 123,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 2279,
+    "bytes_received": 19670,
+    "details": {
+      "success": true,
+      "service": "web"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:16:09.891812+00:00",
+    "source_ip": "192.168.1.28",
+    "destination_ip": "8.8.8.8",
+    "destination_port": 443,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 2739,
+    "bytes_received": 14759,
+    "details": {
+      "success": true,
+      "service": "dns"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:16:24.891812+00:00",
+    "source_ip": "192.168.1.62",
+    "destination_ip": "1.1.1.1",
+    "destination_port": 123,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 2133,
+    "bytes_received": 7162,
+    "details": {
+      "success": true,
+      "service": "web"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:16:39.891812+00:00",
+    "source_ip": "192.168.1.54",
+    "destination_ip": "203.0.113.50",
+    "destination_port": 123,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 2908,
+    "bytes_received": 5198,
+    "details": {
+      "success": true,
+      "service": "ntp"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:16:54.891812+00:00",
+    "source_ip": "192.168.1.69",
+    "destination_ip": "192.168.10.10",
+    "destination_port": 53,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 1333,
+    "bytes_received": 719,
+    "details": {
+      "success": true,
+      "service": "dns"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:17:09.891812+00:00",
+    "source_ip": "192.168.1.29",
+    "destination_ip": "198.51.100.23",
+    "destination_port": 53,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 3931,
+    "bytes_received": 15193,
+    "details": {
+      "success": true,
+      "service": "ntp"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:17:24.891812+00:00",
+    "source_ip": "192.168.1.66",
+    "destination_ip": "8.8.8.8",
+    "destination_port": 80,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 784,
+    "bytes_received": 7967,
+    "details": {
+      "success": true,
+      "service": "dns"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:17:39.891812+00:00",
+    "source_ip": "192.168.1.61",
+    "destination_ip": "8.8.8.8",
+    "destination_port": 443,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 3038,
+    "bytes_received": 13505,
+    "details": {
+      "success": true,
+      "service": "ntp"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:17:54.891812+00:00",
+    "source_ip": "192.168.1.39",
+    "destination_ip": "192.168.20.15",
+    "destination_port": 123,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 2951,
+    "bytes_received": 14168,
+    "details": {
+      "success": true,
+      "service": "web"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:18:09.891812+00:00",
+    "source_ip": "192.168.1.70",
+    "destination_ip": "192.168.10.20",
+    "destination_port": 53,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 452,
+    "bytes_received": 702,
+    "details": {
+      "success": true,
+      "service": "web"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:18:24.891812+00:00",
+    "source_ip": "192.168.1.60",
+    "destination_ip": "192.168.10.20",
+    "destination_port": 80,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 2922,
+    "bytes_received": 6650,
+    "details": {
+      "success": true,
+      "service": "dns"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:18:39.891812+00:00",
+    "source_ip": "192.168.1.25",
+    "destination_ip": "1.1.1.1",
+    "destination_port": 443,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 3900,
+    "bytes_received": 2129,
+    "details": {
+      "success": true,
+      "service": "web"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:18:54.891812+00:00",
+    "source_ip": "192.168.1.34",
+    "destination_ip": "192.168.10.20",
+    "destination_port": 443,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 3607,
+    "bytes_received": 18274,
+    "details": {
+      "success": true,
+      "service": "web"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:19:09.891812+00:00",
+    "source_ip": "192.168.1.50",
+    "destination_ip": "192.168.10.20",
+    "destination_port": 80,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 422,
+    "bytes_received": 2416,
+    "details": {
+      "success": true,
+      "service": "ntp"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:19:24.891812+00:00",
+    "source_ip": "192.168.1.62",
+    "destination_ip": "1.1.1.1",
+    "destination_port": 123,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 2496,
+    "bytes_received": 12607,
+    "details": {
+      "success": true,
+      "service": "dns"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:19:39.891812+00:00",
+    "source_ip": "192.168.1.20",
+    "destination_ip": "192.168.20.15",
+    "destination_port": 80,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 2331,
+    "bytes_received": 18229,
+    "details": {
+      "success": true,
+      "service": "dns"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:19:54.891812+00:00",
+    "source_ip": "192.168.1.74",
+    "destination_ip": "192.168.10.20",
+    "destination_port": 443,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 2258,
+    "bytes_received": 18621,
+    "details": {
+      "success": true,
+      "service": "web"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:20:09.891812+00:00",
+    "source_ip": "192.168.1.29",
+    "destination_ip": "192.168.10.20",
+    "destination_port": 53,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 1346,
+    "bytes_received": 16132,
+    "details": {
+      "success": true,
+      "service": "web"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:20:24.891812+00:00",
+    "source_ip": "192.168.1.22",
+    "destination_ip": "192.168.20.15",
+    "destination_port": 123,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 3216,
+    "bytes_received": 19953,
+    "details": {
+      "success": true,
+      "service": "dns"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:20:39.891812+00:00",
+    "source_ip": "192.168.1.25",
+    "destination_ip": "192.168.20.15",
+    "destination_port": 53,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 3400,
+    "bytes_received": 14488,
+    "details": {
+      "success": true,
+      "service": "ntp"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:20:54.891812+00:00",
+    "source_ip": "192.168.1.46",
+    "destination_ip": "198.51.100.23",
+    "destination_port": 443,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 169,
+    "bytes_received": 16477,
+    "details": {
+      "success": true,
+      "service": "ntp"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:21:09.891812+00:00",
+    "source_ip": "192.168.1.74",
+    "destination_ip": "1.1.1.1",
+    "destination_port": 80,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 1861,
+    "bytes_received": 6395,
+    "details": {
+      "success": true,
+      "service": "dns"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:21:24.891812+00:00",
+    "source_ip": "192.168.1.55",
+    "destination_ip": "192.168.10.20",
+    "destination_port": 80,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 1029,
+    "bytes_received": 19957,
+    "details": {
+      "success": true,
+      "service": "dns"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:21:39.891812+00:00",
+    "source_ip": "192.168.1.34",
+    "destination_ip": "192.168.10.10",
+    "destination_port": 80,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 203,
+    "bytes_received": 14130,
+    "details": {
+      "success": true,
+      "service": "ntp"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:21:54.891812+00:00",
+    "source_ip": "192.168.1.54",
+    "destination_ip": "192.168.20.15",
+    "destination_port": 123,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 3043,
+    "bytes_received": 10731,
+    "details": {
+      "success": true,
+      "service": "web"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:22:09.891812+00:00",
+    "source_ip": "192.168.1.23",
+    "destination_ip": "192.168.10.20",
+    "destination_port": 443,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 3508,
+    "bytes_received": 10874,
+    "details": {
+      "success": true,
+      "service": "dns"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:22:24.891812+00:00",
+    "source_ip": "192.168.1.69",
+    "destination_ip": "203.0.113.50",
+    "destination_port": 123,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 543,
+    "bytes_received": 17846,
+    "details": {
+      "success": true,
+      "service": "dns"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:22:39.891812+00:00",
+    "source_ip": "192.168.1.64",
+    "destination_ip": "8.8.8.8",
+    "destination_port": 443,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 277,
+    "bytes_received": 13274,
+    "details": {
+      "success": true,
+      "service": "dns"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:22:54.891812+00:00",
+    "source_ip": "192.168.1.61",
+    "destination_ip": "8.8.8.8",
+    "destination_port": 443,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 457,
+    "bytes_received": 10730,
+    "details": {
+      "success": true,
+      "service": "ntp"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:23:09.891812+00:00",
+    "source_ip": "192.168.1.53",
+    "destination_ip": "192.168.10.10",
+    "destination_port": 443,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 486,
+    "bytes_received": 15253,
+    "details": {
+      "success": true,
+      "service": "ntp"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:23:24.891812+00:00",
+    "source_ip": "192.168.1.63",
+    "destination_ip": "192.168.20.15",
+    "destination_port": 123,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 252,
+    "bytes_received": 4941,
+    "details": {
+      "success": true,
+      "service": "dns"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:23:39.891812+00:00",
+    "source_ip": "192.168.1.26",
+    "destination_ip": "1.1.1.1",
+    "destination_port": 443,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 676,
+    "bytes_received": 6797,
+    "details": {
+      "success": true,
+      "service": "ntp"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:23:54.891812+00:00",
+    "source_ip": "192.168.1.72",
+    "destination_ip": "203.0.113.50",
+    "destination_port": 443,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 1507,
+    "bytes_received": 2495,
+    "details": {
+      "success": true,
+      "service": "web"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:24:09.891812+00:00",
+    "source_ip": "192.168.1.59",
+    "destination_ip": "1.1.1.1",
+    "destination_port": 80,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 1220,
+    "bytes_received": 17927,
+    "details": {
+      "success": true,
+      "service": "dns"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:24:24.891812+00:00",
+    "source_ip": "192.168.1.63",
+    "destination_ip": "203.0.113.50",
+    "destination_port": 443,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 739,
+    "bytes_received": 3756,
+    "details": {
+      "success": true,
+      "service": "dns"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:24:39.891812+00:00",
+    "source_ip": "192.168.1.76",
+    "destination_ip": "1.1.1.1",
+    "destination_port": 80,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 299,
+    "bytes_received": 274,
+    "details": {
+      "success": true,
+      "service": "dns"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:24:54.891812+00:00",
+    "source_ip": "192.168.1.35",
+    "destination_ip": "192.168.20.15",
+    "destination_port": 123,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 1389,
+    "bytes_received": 6728,
+    "details": {
+      "success": true,
+      "service": "ntp"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:25:09.891812+00:00",
+    "source_ip": "192.168.1.24",
+    "destination_ip": "192.168.10.20",
+    "destination_port": 443,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 3112,
+    "bytes_received": 13427,
+    "details": {
+      "success": true,
+      "service": "dns"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:25:24.891812+00:00",
+    "source_ip": "192.168.1.32",
+    "destination_ip": "192.168.20.15",
+    "destination_port": 80,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 3041,
+    "bytes_received": 7296,
+    "details": {
+      "success": true,
+      "service": "ntp"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:25:39.891812+00:00",
+    "source_ip": "192.168.1.53",
+    "destination_ip": "192.168.10.20",
+    "destination_port": 53,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 531,
+    "bytes_received": 9900,
+    "details": {
+      "success": true,
+      "service": "ntp"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:25:54.891812+00:00",
+    "source_ip": "192.168.1.40",
+    "destination_ip": "203.0.113.50",
+    "destination_port": 123,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 3868,
+    "bytes_received": 1618,
+    "details": {
+      "success": true,
+      "service": "web"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:26:09.891812+00:00",
+    "source_ip": "192.168.1.46",
+    "destination_ip": "203.0.113.50",
+    "destination_port": 123,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 2750,
+    "bytes_received": 17928,
+    "details": {
+      "success": true,
+      "service": "ntp"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:26:24.891812+00:00",
+    "source_ip": "192.168.1.37",
+    "destination_ip": "192.168.10.10",
+    "destination_port": 123,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 3705,
+    "bytes_received": 10771,
+    "details": {
+      "success": true,
+      "service": "dns"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:26:39.891812+00:00",
+    "source_ip": "192.168.1.79",
+    "destination_ip": "1.1.1.1",
+    "destination_port": 443,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 3751,
+    "bytes_received": 16540,
+    "details": {
+      "success": true,
+      "service": "ntp"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:26:54.891812+00:00",
+    "source_ip": "192.168.1.70",
+    "destination_ip": "192.168.10.10",
+    "destination_port": 123,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 2583,
+    "bytes_received": 12508,
+    "details": {
+      "success": true,
+      "service": "ntp"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:27:09.891812+00:00",
+    "source_ip": "192.168.1.62",
+    "destination_ip": "8.8.8.8",
+    "destination_port": 443,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 2513,
+    "bytes_received": 6412,
+    "details": {
+      "success": true,
+      "service": "ntp"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:27:24.891812+00:00",
+    "source_ip": "192.168.1.54",
+    "destination_ip": "198.51.100.23",
+    "destination_port": 123,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 3373,
+    "bytes_received": 17402,
+    "details": {
+      "success": true,
+      "service": "web"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:27:39.891812+00:00",
+    "source_ip": "192.168.1.63",
+    "destination_ip": "192.168.10.10",
+    "destination_port": 443,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 3052,
+    "bytes_received": 19599,
+    "details": {
+      "success": true,
+      "service": "dns"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:27:54.891812+00:00",
+    "source_ip": "192.168.1.45",
+    "destination_ip": "198.51.100.23",
+    "destination_port": 443,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 432,
+    "bytes_received": 8771,
+    "details": {
+      "success": true,
+      "service": "web"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:28:09.891812+00:00",
+    "source_ip": "192.168.1.28",
+    "destination_ip": "203.0.113.50",
+    "destination_port": 123,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 554,
+    "bytes_received": 3490,
+    "details": {
+      "success": true,
+      "service": "ntp"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:28:24.891812+00:00",
+    "source_ip": "192.168.1.31",
+    "destination_ip": "1.1.1.1",
+    "destination_port": 123,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 648,
+    "bytes_received": 16964,
+    "details": {
+      "success": true,
+      "service": "dns"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:28:39.891812+00:00",
+    "source_ip": "192.168.1.61",
+    "destination_ip": "1.1.1.1",
+    "destination_port": 443,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 2859,
+    "bytes_received": 14417,
+    "details": {
+      "success": true,
+      "service": "ntp"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:28:54.891812+00:00",
+    "source_ip": "192.168.1.21",
+    "destination_ip": "192.168.20.15",
+    "destination_port": 123,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 1697,
+    "bytes_received": 12917,
+    "details": {
+      "success": true,
+      "service": "ntp"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:29:09.891812+00:00",
+    "source_ip": "192.168.1.52",
+    "destination_ip": "198.51.100.23",
+    "destination_port": 53,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 375,
+    "bytes_received": 18903,
+    "details": {
+      "success": true,
+      "service": "dns"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:29:24.891812+00:00",
+    "source_ip": "192.168.1.69",
+    "destination_ip": "1.1.1.1",
+    "destination_port": 80,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 3021,
+    "bytes_received": 1093,
+    "details": {
+      "success": true,
+      "service": "ntp"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:29:24.891812+00:00",
+    "source_ip": "192.168.1.66",
+    "username": "admin",
+    "event_type": "authentication",
+    "severity": "high",
+    "details": {
+      "success": false,
+      "reason": "invalid_password",
+      "attempts": 1
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:29:32.891812+00:00",
+    "source_ip": "192.168.1.66",
+    "username": "admin",
+    "event_type": "authentication",
+    "severity": "high",
+    "details": {
+      "success": false,
+      "reason": "invalid_password",
+      "attempts": 2
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:29:39.891812+00:00",
+    "source_ip": "192.168.1.23",
+    "destination_ip": "192.168.10.10",
+    "destination_port": 53,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 2464,
+    "bytes_received": 10606,
+    "details": {
+      "success": true,
+      "service": "dns"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:29:40.891812+00:00",
+    "source_ip": "192.168.1.66",
+    "username": "admin",
+    "event_type": "authentication",
+    "severity": "high",
+    "details": {
+      "success": false,
+      "reason": "invalid_password",
+      "attempts": 3
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:29:48.891812+00:00",
+    "source_ip": "192.168.1.66",
+    "username": "admin",
+    "event_type": "authentication",
+    "severity": "high",
+    "details": {
+      "success": false,
+      "reason": "invalid_password",
+      "attempts": 4
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:29:54.891812+00:00",
+    "source_ip": "192.168.1.59",
+    "destination_ip": "192.168.20.15",
+    "destination_port": 123,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 1338,
+    "bytes_received": 19669,
+    "details": {
+      "success": true,
+      "service": "ntp"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:29:56.891812+00:00",
+    "source_ip": "192.168.1.66",
+    "username": "admin",
+    "event_type": "authentication",
+    "severity": "high",
+    "details": {
+      "success": false,
+      "reason": "invalid_password",
+      "attempts": 5
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:30:04.891812+00:00",
+    "source_ip": "192.168.1.66",
+    "username": "admin",
+    "event_type": "authentication",
+    "severity": "high",
+    "details": {
+      "success": false,
+      "reason": "invalid_password",
+      "attempts": 6
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:30:09.891812+00:00",
+    "source_ip": "192.168.1.39",
+    "destination_ip": "203.0.113.50",
+    "destination_port": 123,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 3434,
+    "bytes_received": 11291,
+    "details": {
+      "success": true,
+      "service": "ntp"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:30:12.891812+00:00",
+    "source_ip": "192.168.1.66",
+    "username": "admin",
+    "event_type": "authentication",
+    "severity": "high",
+    "details": {
+      "success": false,
+      "reason": "invalid_password",
+      "attempts": 7
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:30:20.891812+00:00",
+    "source_ip": "192.168.1.66",
+    "username": "admin",
+    "event_type": "authentication",
+    "severity": "high",
+    "details": {
+      "success": false,
+      "reason": "invalid_password",
+      "attempts": 8
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:30:24.891812+00:00",
+    "source_ip": "192.168.1.31",
+    "destination_ip": "8.8.8.8",
+    "destination_port": 443,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 1910,
+    "bytes_received": 14072,
+    "details": {
+      "success": true,
+      "service": "web"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:30:28.891812+00:00",
+    "source_ip": "192.168.1.66",
+    "username": "admin",
+    "event_type": "authentication",
+    "severity": "high",
+    "details": {
+      "success": false,
+      "reason": "invalid_password",
+      "attempts": 9
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:30:36.891812+00:00",
+    "source_ip": "192.168.1.66",
+    "username": "admin",
+    "event_type": "authentication",
+    "severity": "high",
+    "details": {
+      "success": false,
+      "reason": "invalid_password",
+      "attempts": 10
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:30:39.891812+00:00",
+    "source_ip": "192.168.1.34",
+    "destination_ip": "198.51.100.23",
+    "destination_port": 53,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 137,
+    "bytes_received": 17162,
+    "details": {
+      "success": true,
+      "service": "dns"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:30:44.891812+00:00",
+    "source_ip": "192.168.1.66",
+    "username": "admin",
+    "event_type": "authentication",
+    "severity": "high",
+    "details": {
+      "success": false,
+      "reason": "invalid_password",
+      "attempts": 11
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:30:52.891812+00:00",
+    "source_ip": "192.168.1.66",
+    "username": "admin",
+    "event_type": "authentication",
+    "severity": "high",
+    "details": {
+      "success": false,
+      "reason": "invalid_password",
+      "attempts": 12
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:30:54.891812+00:00",
+    "source_ip": "192.168.1.45",
+    "destination_ip": "203.0.113.50",
+    "destination_port": 123,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 1968,
+    "bytes_received": 5993,
+    "details": {
+      "success": true,
+      "service": "dns"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:31:00.891812+00:00",
+    "source_ip": "192.168.1.66",
+    "username": "admin",
+    "event_type": "authentication",
+    "severity": "high",
+    "details": {
+      "success": false,
+      "reason": "invalid_password",
+      "attempts": 13
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:31:08.891812+00:00",
+    "source_ip": "192.168.1.66",
+    "username": "admin",
+    "event_type": "authentication",
+    "severity": "high",
+    "details": {
+      "success": false,
+      "reason": "invalid_password",
+      "attempts": 14
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:31:09.891812+00:00",
+    "source_ip": "192.168.1.20",
+    "destination_ip": "192.168.10.10",
+    "destination_port": 123,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 1915,
+    "bytes_received": 1103,
+    "details": {
+      "success": true,
+      "service": "ntp"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:31:24.891812+00:00",
+    "source_ip": "192.168.1.38",
+    "destination_ip": "192.168.10.10",
+    "destination_port": 80,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 1731,
+    "bytes_received": 3817,
+    "details": {
+      "success": true,
+      "service": "web"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:31:39.891812+00:00",
+    "source_ip": "192.168.1.23",
+    "destination_ip": "192.168.20.15",
+    "destination_port": 53,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 2191,
+    "bytes_received": 8888,
+    "details": {
+      "success": true,
+      "service": "ntp"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:31:54.891812+00:00",
+    "source_ip": "192.168.1.49",
+    "destination_ip": "203.0.113.50",
+    "destination_port": 443,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 2255,
+    "bytes_received": 1067,
+    "details": {
+      "success": true,
+      "service": "ntp"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:32:09.891812+00:00",
+    "source_ip": "192.168.1.66",
+    "destination_ip": "203.0.113.50",
+    "destination_port": 443,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 2566,
+    "bytes_received": 18333,
+    "details": {
+      "success": true,
+      "service": "ntp"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:32:24.891812+00:00",
+    "source_ip": "192.168.1.22",
+    "destination_ip": "192.168.20.15",
+    "destination_port": 80,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 2727,
+    "bytes_received": 17987,
+    "details": {
+      "success": true,
+      "service": "dns"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:32:39.891812+00:00",
+    "source_ip": "192.168.1.50",
+    "destination_ip": "192.168.20.15",
+    "destination_port": 123,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 2478,
+    "bytes_received": 5558,
+    "details": {
+      "success": true,
+      "service": "web"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:32:54.891812+00:00",
+    "source_ip": "192.168.1.54",
+    "destination_ip": "192.168.20.15",
+    "destination_port": 123,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 2332,
+    "bytes_received": 15457,
+    "details": {
+      "success": true,
+      "service": "ntp"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:33:09.891812+00:00",
+    "source_ip": "192.168.1.55",
+    "destination_ip": "192.168.10.10",
+    "destination_port": 443,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 248,
+    "bytes_received": 4960,
+    "details": {
+      "success": true,
+      "service": "web"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:33:24.891812+00:00",
+    "source_ip": "192.168.1.63",
+    "destination_ip": "8.8.8.8",
+    "destination_port": 443,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 554,
+    "bytes_received": 18596,
+    "details": {
+      "success": true,
+      "service": "dns"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:33:39.891812+00:00",
+    "source_ip": "192.168.1.34",
+    "destination_ip": "203.0.113.50",
+    "destination_port": 123,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 2690,
+    "bytes_received": 14728,
+    "details": {
+      "success": true,
+      "service": "dns"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:33:54.891812+00:00",
+    "source_ip": "192.168.1.74",
+    "destination_ip": "203.0.113.50",
+    "destination_port": 53,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 1396,
+    "bytes_received": 2443,
+    "details": {
+      "success": true,
+      "service": "ntp"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:34:09.891812+00:00",
+    "source_ip": "192.168.1.22",
+    "destination_ip": "192.168.10.10",
+    "destination_port": 53,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 2947,
+    "bytes_received": 7742,
+    "details": {
+      "success": true,
+      "service": "dns"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:44:24.891812+00:00",
+    "source_ip": "192.168.1.66",
+    "destination_ip": "192.168.20.15",
+    "destination_port": 445,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "high",
+    "details": {
+      "success": false,
+      "message": "SMB connection refused"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:44:44.891812+00:00",
+    "source_ip": "192.168.1.66",
+    "destination_ip": "192.168.10.20",
+    "destination_port": 445,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "high",
+    "details": {
+      "success": false,
+      "message": "SMB connection refused"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:45:04.891812+00:00",
+    "source_ip": "192.168.1.66",
+    "destination_ip": "192.168.20.15",
+    "destination_port": 445,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "high",
+    "details": {
+      "success": false,
+      "message": "SMB connection refused"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:45:24.891812+00:00",
+    "source_ip": "192.168.1.66",
+    "destination_ip": "192.168.20.15",
+    "destination_port": 445,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "high",
+    "details": {
+      "success": false,
+      "message": "SMB connection refused"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:45:44.891812+00:00",
+    "source_ip": "192.168.1.66",
+    "destination_ip": "192.168.10.20",
+    "destination_port": 445,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "high",
+    "details": {
+      "success": false,
+      "message": "SMB connection refused"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:46:04.891812+00:00",
+    "source_ip": "192.168.1.66",
+    "destination_ip": "192.168.20.15",
+    "destination_port": 445,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "high",
+    "details": {
+      "success": false,
+      "message": "SMB connection refused"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:46:24.891812+00:00",
+    "source_ip": "192.168.1.66",
+    "destination_ip": "192.168.10.10",
+    "destination_port": 445,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "high",
+    "details": {
+      "success": false,
+      "message": "SMB connection refused"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T21:46:44.891812+00:00",
+    "source_ip": "192.168.1.66",
+    "destination_ip": "192.168.10.10",
+    "destination_port": 445,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "high",
+    "details": {
+      "success": false,
+      "message": "SMB connection refused"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T22:04:24.891812+00:00",
+    "source_ip": "192.168.1.42",
+    "destination_ip": "203.0.113.50",
+    "destination_port": 443,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "medium",
+    "bytes_sent": 1027,
+    "bytes_received": 939,
+    "details": {
+      "interval": "periodic",
+      "repeat_count": 5,
+      "message": "beacon-like callback"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T22:05:24.891812+00:00",
+    "source_ip": "192.168.1.42",
+    "destination_ip": "203.0.113.50",
+    "destination_port": 443,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "medium",
+    "bytes_sent": 342,
+    "bytes_received": 2656,
+    "details": {
+      "interval": "periodic",
+      "repeat_count": 5,
+      "message": "beacon-like callback"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T22:06:24.891812+00:00",
+    "source_ip": "192.168.1.42",
+    "destination_ip": "203.0.113.50",
+    "destination_port": 443,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "medium",
+    "bytes_sent": 782,
+    "bytes_received": 890,
+    "details": {
+      "interval": "periodic",
+      "repeat_count": 5,
+      "message": "beacon-like callback"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T22:07:24.891812+00:00",
+    "source_ip": "192.168.1.42",
+    "destination_ip": "203.0.113.50",
+    "destination_port": 443,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "medium",
+    "bytes_sent": 566,
+    "bytes_received": 4801,
+    "details": {
+      "interval": "periodic",
+      "repeat_count": 5,
+      "message": "beacon-like callback"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T22:08:24.891812+00:00",
+    "source_ip": "192.168.1.42",
+    "destination_ip": "203.0.113.50",
+    "destination_port": 443,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "medium",
+    "bytes_sent": 734,
+    "bytes_received": 1213,
+    "details": {
+      "interval": "periodic",
+      "repeat_count": 5,
+      "message": "beacon-like callback"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T22:09:24.891812+00:00",
+    "source_ip": "192.168.1.42",
+    "destination_ip": "203.0.113.50",
+    "destination_port": 443,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "medium",
+    "bytes_sent": 404,
+    "bytes_received": 1354,
+    "details": {
+      "interval": "periodic",
+      "repeat_count": 5,
+      "message": "beacon-like callback"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T22:24:24.891812+00:00",
+    "source_ip": "192.168.1.55",
+    "event_type": "file_access",
+    "severity": "critical",
+    "file_path": "C:/Users/Public/document_167.docx.crypt",
+    "details": {
+      "operation": "encrypt",
+      "message": "bulk file rename detected"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T22:24:29.891812+00:00",
+    "source_ip": "192.168.1.55",
+    "event_type": "file_access",
+    "severity": "critical",
+    "file_path": "C:/Users/Public/document_68.docx.crypt",
+    "details": {
+      "operation": "encrypt",
+      "message": "bulk file rename detected"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T22:24:34.891812+00:00",
+    "source_ip": "192.168.1.55",
+    "event_type": "file_access",
+    "severity": "critical",
+    "file_path": "C:/Users/Public/document_276.docx.locked",
+    "details": {
+      "operation": "encrypt",
+      "message": "bulk file rename detected"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T22:24:39.891812+00:00",
+    "source_ip": "192.168.1.55",
+    "event_type": "file_access",
+    "severity": "critical",
+    "file_path": "C:/Users/Public/document_488.docx.crypt",
+    "details": {
+      "operation": "encrypt",
+      "message": "bulk file rename detected"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T22:24:44.891812+00:00",
+    "source_ip": "192.168.1.55",
+    "event_type": "file_access",
+    "severity": "critical",
+    "file_path": "C:/Users/Public/document_161.docx.locked",
+    "details": {
+      "operation": "encrypt",
+      "message": "bulk file rename detected"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T22:24:49.891812+00:00",
+    "source_ip": "192.168.1.55",
+    "event_type": "file_access",
+    "severity": "critical",
+    "file_path": "C:/Users/Public/document_426.docx.crypt",
+    "details": {
+      "operation": "encrypt",
+      "message": "bulk file rename detected"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T22:24:54.891812+00:00",
+    "source_ip": "192.168.1.55",
+    "event_type": "file_access",
+    "severity": "critical",
+    "file_path": "C:/Users/Public/document_132.docx.locked",
+    "details": {
+      "operation": "encrypt",
+      "message": "bulk file rename detected"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T22:24:59.891812+00:00",
+    "source_ip": "192.168.1.55",
+    "event_type": "file_access",
+    "severity": "critical",
+    "file_path": "C:/Users/Public/document_227.docx.encrypted",
+    "details": {
+      "operation": "encrypt",
+      "message": "bulk file rename detected"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T22:25:04.891812+00:00",
+    "source_ip": "192.168.1.55",
+    "event_type": "file_access",
+    "severity": "critical",
+    "file_path": "C:/Users/Public/document_59.docx.locked",
+    "details": {
+      "operation": "encrypt",
+      "message": "bulk file rename detected"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T22:25:09.891812+00:00",
+    "source_ip": "192.168.1.55",
+    "event_type": "file_access",
+    "severity": "critical",
+    "file_path": "C:/Users/Public/document_17.docx.encrypted",
+    "details": {
+      "operation": "encrypt",
+      "message": "bulk file rename detected"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T22:25:14.891812+00:00",
+    "source_ip": "192.168.1.55",
+    "event_type": "file_access",
+    "severity": "critical",
+    "file_path": "C:/Users/Public/document_388.docx.encrypted",
+    "details": {
+      "operation": "encrypt",
+      "message": "bulk file rename detected"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T22:25:19.891812+00:00",
+    "source_ip": "192.168.1.55",
+    "event_type": "file_access",
+    "severity": "critical",
+    "file_path": "C:/Users/Public/document_144.docx.crypt",
+    "details": {
+      "operation": "encrypt",
+      "message": "bulk file rename detected"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T22:25:24.891812+00:00",
+    "source_ip": "192.168.1.55",
+    "event_type": "file_access",
+    "severity": "critical",
+    "file_path": "C:/Users/Public/document_142.docx.crypt",
+    "details": {
+      "operation": "encrypt",
+      "message": "bulk file rename detected"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T22:25:29.891812+00:00",
+    "source_ip": "192.168.1.55",
+    "event_type": "file_access",
+    "severity": "critical",
+    "file_path": "C:/Users/Public/document_450.docx.encrypted",
+    "details": {
+      "operation": "encrypt",
+      "message": "bulk file rename detected"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T22:25:34.891812+00:00",
+    "source_ip": "192.168.1.55",
+    "event_type": "file_access",
+    "severity": "critical",
+    "file_path": "C:/Users/Public/document_65.docx.crypt",
+    "details": {
+      "operation": "encrypt",
+      "message": "bulk file rename detected"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T22:25:39.891812+00:00",
+    "source_ip": "192.168.1.55",
+    "event_type": "file_access",
+    "severity": "critical",
+    "file_path": "C:/Users/Public/document_77.docx.encrypted",
+    "details": {
+      "operation": "encrypt",
+      "message": "bulk file rename detected"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T22:25:44.891812+00:00",
+    "source_ip": "192.168.1.55",
+    "event_type": "file_access",
+    "severity": "critical",
+    "file_path": "C:/Users/Public/document_453.docx.crypt",
+    "details": {
+      "operation": "encrypt",
+      "message": "bulk file rename detected"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T22:25:49.891812+00:00",
+    "source_ip": "192.168.1.55",
+    "event_type": "file_access",
+    "severity": "critical",
+    "file_path": "C:/Users/Public/document_50.docx.encrypted",
+    "details": {
+      "operation": "encrypt",
+      "message": "bulk file rename detected"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T22:25:54.891812+00:00",
+    "source_ip": "192.168.1.55",
+    "event_type": "file_access",
+    "severity": "critical",
+    "file_path": "C:/Users/Public/document_72.docx.crypt",
+    "details": {
+      "operation": "encrypt",
+      "message": "bulk file rename detected"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T22:25:59.891812+00:00",
+    "source_ip": "192.168.1.55",
+    "event_type": "file_access",
+    "severity": "critical",
+    "file_path": "C:/Users/Public/document_370.docx.locked",
+    "details": {
+      "operation": "encrypt",
+      "message": "bulk file rename detected"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T22:26:04.891812+00:00",
+    "source_ip": "192.168.1.55",
+    "event_type": "file_access",
+    "severity": "critical",
+    "file_path": "C:/Users/Public/document_138.docx.crypt",
+    "details": {
+      "operation": "encrypt",
+      "message": "bulk file rename detected"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T22:26:09.891812+00:00",
+    "source_ip": "192.168.1.55",
+    "event_type": "file_access",
+    "severity": "critical",
+    "file_path": "C:/Users/Public/document_86.docx.encrypted",
+    "details": {
+      "operation": "encrypt",
+      "message": "bulk file rename detected"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T22:26:14.891812+00:00",
+    "source_ip": "192.168.1.55",
+    "event_type": "file_access",
+    "severity": "critical",
+    "file_path": "C:/Users/Public/document_137.docx.crypt",
+    "details": {
+      "operation": "encrypt",
+      "message": "bulk file rename detected"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T22:26:19.891812+00:00",
+    "source_ip": "192.168.1.55",
+    "event_type": "file_access",
+    "severity": "critical",
+    "file_path": "C:/Users/Public/document_210.docx.crypt",
+    "details": {
+      "operation": "encrypt",
+      "message": "bulk file rename detected"
+    }
+  },
+  {
+    "timestamp": "2026-05-29T22:39:24.891812+00:00",
+    "source_ip": "192.168.1.55",
+    "username": "svc_backup",
+    "event_type": "process_creation",
+    "severity": "medium",
+    "process_name": "powershell.exe",
+    "details": {
+      "command": "7z.exe a C:/Temp/archive.7z C:/Sensitive/*",
+      "message": "archive creation before outbound transfer"
+    }
+  }
+]

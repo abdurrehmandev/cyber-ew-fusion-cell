@@ -1,0 +1,389 @@
+{
+  "generated_at": "2026-05-31T20:46:38.633642+00:00",
+  "profile": {
+    "name": "production",
+    "description": "Hardened local production profile for a SOC workstation or server.",
+    "dashboard_port": 8501,
+    "api_port": 8080,
+    "bind_host": "127.0.0.1",
+    "api_key_required": true,
+    "retention_days": 180,
+    "archive_inputs_days": 30,
+    "log_retention_days": 180,
+    "alert_retention_days": 365,
+    "offline_mode": true,
+    "dashboard_url": "http://127.0.0.1:8501",
+    "api_url": "http://127.0.0.1:8080"
+  },
+  "status": {
+    "generated_at": "2026-05-31T20:46:38.374959+00:00",
+    "profile": {
+      "name": "production",
+      "description": "Hardened local production profile for a SOC workstation or server.",
+      "dashboard_port": 8501,
+      "api_port": 8080,
+      "bind_host": "127.0.0.1",
+      "api_key_required": true,
+      "retention_days": 180,
+      "archive_inputs_days": 30,
+      "log_retention_days": 180,
+      "alert_retention_days": 365,
+      "offline_mode": true,
+      "dashboard_url": "http://127.0.0.1:8501",
+      "api_url": "http://127.0.0.1:8080"
+    },
+    "status_file": {
+      "status": "running",
+      "updated_at": "2026-05-31T20:46:38.192510+00:00",
+      "service_pid": 23560,
+      "dashboard_pid": 21184,
+      "api_pid": 22100,
+      "message": "",
+      "pipeline": {
+        "events_processed": 889,
+        "alerts_generated": 57,
+        "threat_intel_matches": 1,
+        "ml_anomalies_detected": 0,
+        "signature_matches": 0,
+        "start_time": "2026-05-31 20:44:38.686571",
+        "uptime": 119.505939,
+        "processing_rate": 7.438960836917068,
+        "queue_status": {
+          "raw_events": 0,
+          "normalized_events": 0,
+          "analyzed_events": 0,
+          "correlated_events": 0,
+          "scored_events": 0
+        },
+        "runtime_seconds": 119.505939,
+        "engine_stats": {
+          "behavior_engine": {
+            "events_processed": 889,
+            "profiles_created": 468,
+            "profiles_updated": 229,
+            "patterns_detected": 164,
+            "anomalies_found": 0,
+            "baseline_active": 0,
+            "alerts_sent": 0,
+            "total_profiles": 468,
+            "active_sequences": 467,
+            "total_patterns": 164
+          },
+          "scoring_engine": {
+            "scores_calculated": 889,
+            "high_risk_scores": 57,
+            "average_score": 0.38197191260183444,
+            "score_distribution": {
+              "info": 0,
+              "low": 782,
+              "medium": 50,
+              "high": 57,
+              "critical": 0
+            },
+            "recent_scores": [
+              {
+                "score": 0.33000000000000007,
+                "level": "low"
+              },
+              {
+                "score": 0.33000000000000007,
+                "level": "low"
+              },
+              {
+                "score": 0.33000000000000007,
+                "level": "low"
+              },
+              {
+                "score": 0.33000000000000007,
+                "level": "low"
+              },
+              {
+                "score": 0.33000000000000007,
+                "level": "low"
+              },
+              {
+                "score": 0.33000000000000007,
+                "level": "low"
+              },
+              {
+                "score": 0.4033333333333334,
+                "level": "low"
+              },
+              {
+                "score": 0.4766666666666668,
+                "level": "low"
+              },
+              {
+                "score": 0.33000000000000007,
+                "level": "low"
+              },
+              {
+                "score": 0.33000000000000007,
+                "level": "low"
+              }
+            ],
+            "current_trend": "stable"
+          },
+          "threat_intel_engine": {
+            "total_iocs": 3,
+            "feed_stats": {
+              "ThreatFox Malware": {
+                "last_update": "2026-05-31T20:44:39.703265+00:00",
+                "ioc_count": 0,
+                "update_count": 1,
+                "success": true
+              },
+              "Local IOCs": {
+                "last_update": "2026-05-31T20:44:39.704873+00:00",
+                "ioc_count": 3,
+                "update_count": 1,
+                "success": true
+              }
+            },
+            "matches": 1,
+            "last_update": "2026-05-31 20:44:39.704873+00:00",
+            "feed_count": 2,
+            "cache_size": {
+              "ip": 2,
+              "domain": 1
+            }
+          },
+          "ml_anomaly_engine": {
+            "events_processed": 889,
+            "anomalies_detected": 0,
+            "last_training": null,
+            "model_accuracy": 0.0,
+            "feature_history_size": 889,
+            "models_trained": true,
+            "active_models": [
+              "isolation_forest"
+            ],
+            "ml_available": true
+          },
+          "signature_engine": {
+            "total_rules": 5,
+            "enabled_rules": 5,
+            "matches": 0,
+            "last_scan": null,
+            "yara_available": true,
+            "categories": {
+              "credential_access": 2,
+              "network": 1,
+              "reconnaissance": 1,
+              "malware": 1
+            }
+          },
+          "collector_manager": {
+            "windows_eventlog": {
+              "enabled": true,
+              "available": true,
+              "channels": {
+                "Security": {
+                  "available": false,
+                  "error": "(5, 'EvtQuery', 'Access is denied.')"
+                },
+                "System": {
+                  "available": true,
+                  "last_record_id": 3685
+                },
+                "Application": {
+                  "available": true,
+                  "last_record_id": 1574
+                },
+                "Microsoft-Windows-Sysmon/Operational": {
+                  "available": false,
+                  "error": "(15007, 'EvtQuery', 'The specified channel could not be found.')"
+                }
+              },
+              "events_emitted": 0,
+              "errors": 82
+            },
+            "pcap_live": {
+              "enabled": false,
+              "available": true,
+              "interface": "default",
+              "bpf_filter": "ip",
+              "packets_seen": 0,
+              "events_emitted": 0,
+              "errors": 0
+            }
+          }
+        },
+        "threat_detection_summary": {
+          "events_processed": 889,
+          "threat_intel_matches": 1,
+          "ml_anomalies": 0,
+          "signature_matches": 0,
+          "alerts_generated": 57,
+          "detection_rate": 6.411698537682789
+        }
+      },
+      "persisted_alerts": 67
+    },
+    "api_health": {
+      "status": "ok",
+      "live_service": true,
+      "heartbeat_age_seconds": 0.176462,
+      "service_pid": 23560,
+      "dashboard_pid": 21184,
+      "api_pid": 22100,
+      "persisted_alerts": 67
+    },
+    "api_readiness": {
+      "ready": true,
+      "storage": {
+        "alerts_path": "C:\\Users\\rehma\\OneDrive\\Documents\\cyber-ew-fusion-cell\\data\\outputs\\alerts.jsonl",
+        "alerts_writable": true,
+        "cases_path": "C:\\Users\\rehma\\OneDrive\\Documents\\cyber-ew-fusion-cell\\data\\outputs\\cases.json"
+      },
+      "engines": {
+        "ml_available": true,
+        "ml_models_trained": true,
+        "yara_available": true
+      }
+    },
+    "urls": {
+      "dashboard": "http://127.0.0.1:8501",
+      "api": "http://127.0.0.1:8080"
+    },
+    "ports": {
+      "dashboard_8501": true,
+      "api_8080": true
+    },
+    "processes": {
+      "service": true,
+      "dashboard": true,
+      "api": true
+    }
+  },
+  "security_checks": [
+    {
+      "check": "Local-only binding",
+      "status": "pass",
+      "detail": "Bind host is 127.0.0.1"
+    },
+    {
+      "check": "API key for hardened profile",
+      "status": "pass",
+      "detail": "API key is required by this profile"
+    },
+    {
+      "check": "Dashboard port",
+      "status": "pass",
+      "detail": "http://127.0.0.1:8501"
+    },
+    {
+      "check": "API port",
+      "status": "pass",
+      "detail": "http://127.0.0.1:8080"
+    },
+    {
+      "check": "Retention policy",
+      "status": "pass",
+      "detail": "alerts=365d logs=180d inputs=30d"
+    },
+    {
+      "check": "Disk free",
+      "status": "pass",
+      "detail": "353.63 GB free at C:\\Users\\rehma\\OneDrive\\Documents\\cyber-ew-fusion-cell"
+    }
+  ],
+  "sensor_checks": {
+    "windows_eventlog": {
+      "available": true,
+      "channels": {
+        "Security": {
+          "available": false,
+          "error": "(5, 'EvtQuery', 'Access is denied.')"
+        },
+        "System": {
+          "available": true,
+          "sample_count": 1
+        },
+        "Application": {
+          "available": true,
+          "sample_count": 1
+        },
+        "Microsoft-Windows-Sysmon/Operational": {
+          "available": false,
+          "error": "(15007, 'EvtQuery', 'The specified channel could not be found.')"
+        }
+      },
+      "checked_at": "2026-05-31T20:46:38.633642+00:00"
+    },
+    "sysmon": {
+      "installed": false,
+      "channel": "Microsoft-Windows-Sysmon/Operational",
+      "detail": {
+        "available": false,
+        "error": "(15007, 'EvtQuery', 'The specified channel could not be found.')"
+      }
+    },
+    "pcap_live": {
+      "available": true,
+      "libpcap_available": false,
+      "checked_at": "2026-05-31T20:46:38.636627+00:00",
+      "interfaces": [
+        "\\Device\\NPF_{C54A0DFB-4EBB-4ADB-8DEC-A0E6489D7102}",
+        "\\Device\\NPF_{D496A3A0-32F7-40AA-8983-81DBF4E7A253}",
+        "\\Device\\NPF_{4C9749FB-2126-4966-9A4E-3E188B7E239B}",
+        "\\Device\\NPF_{43A76B6B-6B87-4358-9C9B-617C27D3E75D}",
+        "\\Device\\NPF_{2760130C-52A9-11F1-BFCE-806E6F6E6963}",
+        "\\Device\\NPF_{690086BA-5C54-11F1-BFD4-F0B61E5D24B9}",
+        "\\Device\\NPF_{690086BB-5C54-11F1-BFD4-F0B61E5D24B9}",
+        "\\Device\\NPF_{690086BC-5C54-11F1-BFD4-F0B61E5D24B9}",
+        "\\Device\\NPF_{690086BD-5C54-11F1-BFD4-F0B61E5D24B9}",
+        "\\Device\\NPF_{690086BE-5C54-11F1-BFD4-F0B61E5D24B9}",
+        "\\Device\\NPF_{690086BF-5C54-11F1-BFD4-F0B61E5D24B9}",
+        "\\Device\\NPF_{C836FC33-D679-4574-8D6A-19F6D2D31B7A}",
+        "\\Device\\NPF_{657DDDC9-22B6-4323-996F-90F9345073B8}",
+        "\\Device\\NPF_{D20DAF05-9370-4CB1-930E-B28B1950B577}",
+        "\\Device\\NPF_{BEA6A9A2-1609-402D-82D5-E2BD8D9DC1A6}",
+        "\\Device\\NPF_{A70E9332-AEEE-4300-ADF3-83DB195498C7}",
+        "\\Device\\NPF_{69008411-5C54-11F1-BFD4-F0B61E5D24B9}",
+        "\\Device\\NPF_{2760140E-52A9-11F1-BFCE-A56EA557924F}",
+        "\\Device\\NPF_{2760140F-52A9-11F1-BFCE-A56EA557924F}",
+        "\\Device\\NPF_{69008FB4-5C54-11F1-BFD4-F0B61E5D24B9}",
+        "\\Device\\NPF_{69008414-5C54-11F1-BFD4-F0B61E5D24B9}",
+        "\\Device\\NPF_{690091C7-5C54-11F1-BFD4-F0B61E5D24B9}",
+        "\\Device\\NPF_{69008FB2-5C54-11F1-BFD4-F0B61E5D24B9}",
+        "\\Device\\NPF_{2760145B-52A9-11F1-BFCE-A56EA557924F}",
+        "\\Device\\NPF_{69008FB3-5C54-11F1-BFD4-F0B61E5D24B9}",
+        "\\Device\\NPF_{69008FC8-5C54-11F1-BFD4-F0B61E5D24B9}",
+        "\\Device\\NPF_{276015D8-52A9-11F1-BFCE-A56EA557924F}",
+        "\\Device\\NPF_{690091C8-5C54-11F1-BFD4-F0B61E5D24B9}",
+        "\\Device\\NPF_{690091C9-5C54-11F1-BFD4-F0B61E5D24B9}",
+        "\\Device\\NPF_{5A693A5B-994C-4B88-8D37-D3D508EEE630}",
+        "\\Device\\NPF_{93123211-9629-4E04-82F0-EA2E4F221468}",
+        "\\Device\\NPF_{2EE2C70C-A092-4D88-A654-98C8D7645CD5}",
+        "\\Device\\NPF_{07374750-E68B-490E-9330-9FD785CD71B6}",
+        "\\Device\\NPF_{63B13AAF-8E93-49E3-BF16-C83E85E8AFA7}",
+        "\\Device\\NPF_{ECE81161-0E75-4053-830F-E88F4B6E1E26}",
+        "\\Device\\NPF_{E16CC44E-9420-4C89-ABDC-FBC94805E808}",
+        "\\Device\\NPF_{D2D9BBA8-AE49-47C6-95C3-60F7A6F049F4}"
+      ],
+      "npcap_hint": "interfaces available, but libpcap/Npcap provider was not detected"
+    }
+  },
+  "required_modules": {
+    "yaml": true,
+    "requests": true,
+    "pandas": true,
+    "numpy": true,
+    "sklearn": true,
+    "joblib": true,
+    "streamlit": true,
+    "fastapi": true,
+    "uvicorn": true,
+    "pytest": true,
+    "yara": true
+  },
+  "operator_commands": [
+    "python manage.py doctor",
+    "python manage.py start",
+    "python manage.py status",
+    "python manage.py demo",
+    "python manage.py cleanup",
+    "python manage.py stop"
+  ]
+}

@@ -1,0 +1,1961 @@
+{
+  "ip:192.168.1.59": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.59",
+    "period_start": "2026-08-24T02:57:10.062315+00:00",
+    "period_end": "2026-08-24T02:57:10.062315+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 4,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 3,
+      "20": 1
+    },
+    "common_destinations": {
+      "192.168.10.10": 1,
+      "203.0.113.50": 2,
+      "192.168.20.15": 1
+    },
+    "common_ports": {
+      "123": 2,
+      "80": 1,
+      "53": 1
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.60": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.60",
+    "period_start": "2026-08-24T02:57:10.062541+00:00",
+    "period_end": "2026-08-24T02:57:10.062541+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 7,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 7
+    },
+    "common_destinations": {
+      "192.168.20.15": 3,
+      "198.51.100.23": 1,
+      "8.8.8.8": 2,
+      "1.1.1.1": 1
+    },
+    "common_ports": {
+      "123": 3,
+      "443": 1,
+      "53": 1,
+      "80": 2
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.75": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.75",
+    "period_start": "2026-08-24T02:57:10.062625+00:00",
+    "period_end": "2026-08-24T02:57:10.062625+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 2,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 2
+    },
+    "common_destinations": {
+      "203.0.113.50": 2
+    },
+    "common_ports": {
+      "53": 1,
+      "80": 1
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.52": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.52",
+    "period_start": "2026-08-24T02:57:10.062698+00:00",
+    "period_end": "2026-08-24T02:57:10.062698+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 2,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 2
+    },
+    "common_destinations": {
+      "192.168.10.20": 1,
+      "192.168.20.15": 1
+    },
+    "common_ports": {
+      "123": 1,
+      "80": 1
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.21": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.21",
+    "period_start": "2026-08-24T02:57:10.062766+00:00",
+    "period_end": "2026-08-24T02:57:10.062766+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 2,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 2
+    },
+    "common_destinations": {
+      "192.168.20.15": 1,
+      "192.168.10.20": 1
+    },
+    "common_ports": {
+      "123": 1,
+      "80": 1
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.70": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.70",
+    "period_start": "2026-08-24T02:57:10.062835+00:00",
+    "period_end": "2026-08-24T02:57:10.062835+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 1,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 1
+    },
+    "common_destinations": {
+      "192.168.20.15": 1
+    },
+    "common_ports": {
+      "123": 1
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.55": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.55",
+    "period_start": "2026-08-24T02:57:10.062900+00:00",
+    "period_end": "2026-08-24T02:57:10.062900+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 2,
+        "mean": 1.0,
+        "std_dev": 0.0
+      },
+      "file_access": {
+        "count": 48,
+        "mean": 1.0,
+        "std_dev": 0.0
+      },
+      "process_creation": {
+        "count": 2,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 27,
+      "20": 24,
+      "21": 1
+    },
+    "common_destinations": {
+      "8.8.8.8": 2
+    },
+    "common_ports": {
+      "53": 2
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.48": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.48",
+    "period_start": "2026-08-24T02:57:10.063045+00:00",
+    "period_end": "2026-08-24T02:57:10.063045+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 4,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 4
+    },
+    "common_destinations": {
+      "192.168.10.20": 1,
+      "198.51.100.23": 1,
+      "1.1.1.1": 1,
+      "192.168.20.15": 1
+    },
+    "common_ports": {
+      "123": 2,
+      "443": 1,
+      "53": 1
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.56": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.56",
+    "period_start": "2026-08-24T02:57:10.063113+00:00",
+    "period_end": "2026-08-24T02:57:10.063113+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 3,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 2,
+      "20": 1
+    },
+    "common_destinations": {
+      "192.168.20.15": 2,
+      "192.168.10.10": 1
+    },
+    "common_ports": {
+      "80": 1,
+      "53": 2
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.61": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.61",
+    "period_start": "2026-08-24T02:57:10.063180+00:00",
+    "period_end": "2026-08-24T02:57:10.063180+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 4,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 4
+    },
+    "common_destinations": {
+      "203.0.113.50": 2,
+      "198.51.100.23": 1,
+      "192.168.10.10": 1
+    },
+    "common_ports": {
+      "80": 2,
+      "123": 1,
+      "443": 1
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.31": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.31",
+    "period_start": "2026-08-24T02:57:10.063246+00:00",
+    "period_end": "2026-08-24T02:57:10.063246+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 2,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 2
+    },
+    "common_destinations": {
+      "192.168.20.15": 1,
+      "192.168.10.20": 1
+    },
+    "common_ports": {
+      "53": 1,
+      "443": 1
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.77": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.77",
+    "period_start": "2026-08-24T02:57:10.063311+00:00",
+    "period_end": "2026-08-24T02:57:10.063311+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 3,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 3
+    },
+    "common_destinations": {
+      "8.8.8.8": 1,
+      "1.1.1.1": 1,
+      "203.0.113.50": 1
+    },
+    "common_ports": {
+      "443": 2,
+      "123": 1
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.73": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.73",
+    "period_start": "2026-08-24T02:57:10.063510+00:00",
+    "period_end": "2026-08-24T02:57:10.063510+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 4,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 4
+    },
+    "common_destinations": {
+      "203.0.113.50": 3,
+      "8.8.8.8": 1
+    },
+    "common_ports": {
+      "53": 2,
+      "443": 2
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.65": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.65",
+    "period_start": "2026-08-24T02:57:10.063577+00:00",
+    "period_end": "2026-08-24T02:57:10.063577+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 4,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 4
+    },
+    "common_destinations": {
+      "8.8.8.8": 2,
+      "198.51.100.23": 1,
+      "192.168.10.10": 1
+    },
+    "common_ports": {
+      "443": 2,
+      "123": 1,
+      "80": 1
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.62": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.62",
+    "period_start": "2026-08-24T02:57:10.063728+00:00",
+    "period_end": "2026-08-24T02:57:10.063728+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 5,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 5
+    },
+    "common_destinations": {
+      "192.168.10.20": 1,
+      "1.1.1.1": 1,
+      "192.168.10.10": 1,
+      "192.168.20.15": 1,
+      "8.8.8.8": 1
+    },
+    "common_ports": {
+      "123": 2,
+      "53": 2,
+      "443": 1
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.45": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.45",
+    "period_start": "2026-08-24T02:57:10.063796+00:00",
+    "period_end": "2026-08-24T02:57:10.063796+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 2,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 2
+    },
+    "common_destinations": {
+      "192.168.10.10": 1,
+      "192.168.20.15": 1
+    },
+    "common_ports": {
+      "443": 1,
+      "123": 1
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.32": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.32",
+    "period_start": "2026-08-24T02:57:10.064046+00:00",
+    "period_end": "2026-08-24T02:57:10.064046+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 1,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 1
+    },
+    "common_destinations": {
+      "192.168.10.20": 1
+    },
+    "common_ports": {
+      "443": 1
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.69": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.69",
+    "period_start": "2026-08-24T02:57:10.064122+00:00",
+    "period_end": "2026-08-24T02:57:10.064122+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 1,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 1
+    },
+    "common_destinations": {
+      "198.51.100.23": 1
+    },
+    "common_ports": {
+      "123": 1
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.57": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.57",
+    "period_start": "2026-08-24T02:57:10.064188+00:00",
+    "period_end": "2026-08-24T02:57:10.064188+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 1,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 1
+    },
+    "common_destinations": {
+      "198.51.100.23": 1
+    },
+    "common_ports": {
+      "443": 1
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.35": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.35",
+    "period_start": "2026-08-24T02:57:10.064257+00:00",
+    "period_end": "2026-08-24T02:57:10.064257+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 4,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 3,
+      "20": 1
+    },
+    "common_destinations": {
+      "198.51.100.23": 1,
+      "192.168.20.15": 1,
+      "203.0.113.50": 2
+    },
+    "common_ports": {
+      "53": 1,
+      "80": 2,
+      "443": 1
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.25": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.25",
+    "period_start": "2026-08-24T02:57:10.064325+00:00",
+    "period_end": "2026-08-24T02:57:10.064325+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 2,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 2
+    },
+    "common_destinations": {
+      "192.168.20.15": 1,
+      "192.168.10.10": 1
+    },
+    "common_ports": {
+      "123": 2
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.28": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.28",
+    "period_start": "2026-08-24T02:57:10.064389+00:00",
+    "period_end": "2026-08-24T02:57:10.064389+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 3,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 3
+    },
+    "common_destinations": {
+      "8.8.8.8": 1,
+      "203.0.113.50": 2
+    },
+    "common_ports": {
+      "443": 2,
+      "80": 1
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.54": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.54",
+    "period_start": "2026-08-24T02:57:10.064524+00:00",
+    "period_end": "2026-08-24T02:57:10.064524+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 3,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 3
+    },
+    "common_destinations": {
+      "203.0.113.50": 1,
+      "8.8.8.8": 1,
+      "192.168.10.10": 1
+    },
+    "common_ports": {
+      "123": 2,
+      "443": 1
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.66": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.66",
+    "period_start": "2026-08-24T02:57:10.064590+00:00",
+    "period_end": "2026-08-24T02:57:10.064590+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "authentication": {
+        "count": 28,
+        "mean": 1.0,
+        "std_dev": 0.0
+      },
+      "network_connection": {
+        "count": 17,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 37,
+      "20": 8
+    },
+    "common_destinations": {
+      "192.168.20.15": 8,
+      "192.168.10.10": 5,
+      "192.168.10.20": 4
+    },
+    "common_ports": {
+      "445": 16,
+      "123": 1
+    },
+    "anomaly_threshold": 3.0
+  },
+  "user:admin": {
+    "entity_type": "user",
+    "entity_id": "admin",
+    "period_start": "2026-08-24T02:57:10.064590+00:00",
+    "period_end": "2026-08-24T02:57:10.064590+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "authentication": {
+        "count": 28,
+        "mean": 1.0,
+        "std_dev": 0.0
+      },
+      "process_creation": {
+        "count": 2,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 29,
+      "21": 1
+    },
+    "common_destinations": {},
+    "common_ports": {},
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.42": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.42",
+    "period_start": "2026-08-24T02:57:10.066918+00:00",
+    "period_end": "2026-08-24T02:57:10.066918+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 15,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 8,
+      "20": 7
+    },
+    "common_destinations": {
+      "203.0.113.50": 12,
+      "192.168.10.10": 1,
+      "1.1.1.1": 1,
+      "192.168.20.15": 1
+    },
+    "common_ports": {
+      "443": 13,
+      "53": 2
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.26": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.26",
+    "period_start": "2026-08-24T02:57:10.070427+00:00",
+    "period_end": "2026-08-24T02:57:10.070427+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 2,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 2
+    },
+    "common_destinations": {
+      "198.51.100.23": 2
+    },
+    "common_ports": {
+      "443": 1,
+      "53": 1
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.41": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.41",
+    "period_start": "2026-08-24T02:57:10.070573+00:00",
+    "period_end": "2026-08-24T02:57:10.070573+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 3,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 2,
+      "20": 1
+    },
+    "common_destinations": {
+      "198.51.100.23": 1,
+      "1.1.1.1": 1,
+      "8.8.8.8": 1
+    },
+    "common_ports": {
+      "80": 2,
+      "53": 1
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.76": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.76",
+    "period_start": "2026-08-24T02:57:10.070646+00:00",
+    "period_end": "2026-08-24T02:57:10.070646+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 3,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 2,
+      "20": 1
+    },
+    "common_destinations": {
+      "192.168.10.20": 1,
+      "192.168.20.15": 1,
+      "203.0.113.50": 1
+    },
+    "common_ports": {
+      "443": 1,
+      "53": 1,
+      "123": 1
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.20": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.20",
+    "period_start": "2026-08-24T02:57:10.070712+00:00",
+    "period_end": "2026-08-24T02:57:10.070712+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 2,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 1,
+      "20": 1
+    },
+    "common_destinations": {
+      "8.8.8.8": 1,
+      "192.168.10.10": 1
+    },
+    "common_ports": {
+      "53": 1,
+      "123": 1
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.46": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.46",
+    "period_start": "2026-08-24T02:57:10.070847+00:00",
+    "period_end": "2026-08-24T02:57:10.070847+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 2,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 2
+    },
+    "common_destinations": {
+      "192.168.20.15": 1,
+      "8.8.8.8": 1
+    },
+    "common_ports": {
+      "123": 1,
+      "443": 1
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.40": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.40",
+    "period_start": "2026-08-24T02:57:10.070986+00:00",
+    "period_end": "2026-08-24T02:57:10.070986+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 6,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 4,
+      "20": 2
+    },
+    "common_destinations": {
+      "192.168.10.10": 2,
+      "203.0.113.50": 1,
+      "198.51.100.23": 1,
+      "192.168.10.20": 2
+    },
+    "common_ports": {
+      "80": 2,
+      "123": 2,
+      "53": 2
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.49": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.49",
+    "period_start": "2026-08-24T02:57:10.071194+00:00",
+    "period_end": "2026-08-24T02:57:10.071194+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 1,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 1
+    },
+    "common_destinations": {
+      "192.168.10.20": 1
+    },
+    "common_ports": {
+      "80": 1
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.74": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.74",
+    "period_start": "2026-08-24T02:57:10.071261+00:00",
+    "period_end": "2026-08-24T02:57:10.071261+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 3,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 3
+    },
+    "common_destinations": {
+      "198.51.100.23": 1,
+      "203.0.113.50": 1,
+      "8.8.8.8": 1
+    },
+    "common_ports": {
+      "123": 1,
+      "53": 2
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.27": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.27",
+    "period_start": "2026-08-24T02:57:10.071397+00:00",
+    "period_end": "2026-08-24T02:57:10.071397+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 1,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 1
+    },
+    "common_destinations": {
+      "192.168.10.10": 1
+    },
+    "common_ports": {
+      "53": 1
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.72": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.72",
+    "period_start": "2026-08-24T02:57:10.071466+00:00",
+    "period_end": "2026-08-24T02:57:10.071466+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 1,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 1
+    },
+    "common_destinations": {
+      "198.51.100.23": 1
+    },
+    "common_ports": {
+      "123": 1
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.71": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.71",
+    "period_start": "2026-08-24T02:57:10.071743+00:00",
+    "period_end": "2026-08-24T02:57:10.071743+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 5,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 4,
+      "20": 1
+    },
+    "common_destinations": {
+      "203.0.113.50": 2,
+      "1.1.1.1": 1,
+      "8.8.8.8": 1,
+      "192.168.10.10": 1
+    },
+    "common_ports": {
+      "443": 1,
+      "123": 1,
+      "80": 2,
+      "53": 1
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.36": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.36",
+    "period_start": "2026-08-24T02:57:10.071812+00:00",
+    "period_end": "2026-08-24T02:57:10.071812+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 7,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 7
+    },
+    "common_destinations": {
+      "203.0.113.50": 2,
+      "192.168.10.20": 2,
+      "1.1.1.1": 1,
+      "198.51.100.23": 1,
+      "192.168.10.10": 1
+    },
+    "common_ports": {
+      "123": 3,
+      "443": 1,
+      "80": 3
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.63": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.63",
+    "period_start": "2026-08-24T02:57:10.072016+00:00",
+    "period_end": "2026-08-24T02:57:10.072016+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 3,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 3
+    },
+    "common_destinations": {
+      "203.0.113.50": 2,
+      "198.51.100.23": 1
+    },
+    "common_ports": {
+      "80": 1,
+      "123": 1,
+      "53": 1
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.33": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.33",
+    "period_start": "2026-08-24T02:57:10.072319+00:00",
+    "period_end": "2026-08-24T02:57:10.072319+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 1,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 1
+    },
+    "common_destinations": {
+      "1.1.1.1": 1
+    },
+    "common_ports": {
+      "123": 1
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.53": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.53",
+    "period_start": "2026-08-24T02:57:10.072666+00:00",
+    "period_end": "2026-08-24T02:57:10.072666+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 3,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 2,
+      "20": 1
+    },
+    "common_destinations": {
+      "8.8.8.8": 1,
+      "192.168.10.10": 1,
+      "203.0.113.50": 1
+    },
+    "common_ports": {
+      "123": 1,
+      "53": 2
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.78": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.78",
+    "period_start": "2026-08-24T02:57:10.072805+00:00",
+    "period_end": "2026-08-24T02:57:10.072805+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 1,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 1
+    },
+    "common_destinations": {
+      "192.168.20.15": 1
+    },
+    "common_ports": {
+      "53": 1
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.47": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.47",
+    "period_start": "2026-08-24T02:57:10.073013+00:00",
+    "period_end": "2026-08-24T02:57:10.073013+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 3,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 2,
+      "20": 1
+    },
+    "common_destinations": {
+      "192.168.20.15": 1,
+      "8.8.8.8": 1,
+      "192.168.10.20": 1
+    },
+    "common_ports": {
+      "443": 1,
+      "123": 2
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.38": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.38",
+    "period_start": "2026-08-24T02:57:10.073367+00:00",
+    "period_end": "2026-08-24T02:57:10.073367+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 4,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 3,
+      "20": 1
+    },
+    "common_destinations": {
+      "198.51.100.23": 3,
+      "8.8.8.8": 1
+    },
+    "common_ports": {
+      "80": 2,
+      "123": 1,
+      "53": 1
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.51": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.51",
+    "period_start": "2026-08-24T02:57:10.073445+00:00",
+    "period_end": "2026-08-24T02:57:10.073445+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 3,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 2,
+      "20": 1
+    },
+    "common_destinations": {
+      "1.1.1.1": 1,
+      "192.168.10.10": 1,
+      "8.8.8.8": 1
+    },
+    "common_ports": {
+      "443": 1,
+      "80": 1,
+      "123": 1
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.68": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.68",
+    "period_start": "2026-08-24T02:57:10.073652+00:00",
+    "period_end": "2026-08-24T02:57:10.073652+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 4,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 3,
+      "20": 1
+    },
+    "common_destinations": {
+      "192.168.10.20": 2,
+      "1.1.1.1": 1,
+      "203.0.113.50": 1
+    },
+    "common_ports": {
+      "443": 1,
+      "80": 2,
+      "123": 1
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.50": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.50",
+    "period_start": "2026-08-24T02:57:10.073859+00:00",
+    "period_end": "2026-08-24T02:57:10.073859+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 5,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 4,
+      "20": 1
+    },
+    "common_destinations": {
+      "192.168.10.20": 1,
+      "8.8.8.8": 1,
+      "198.51.100.23": 1,
+      "1.1.1.1": 1,
+      "203.0.113.50": 1
+    },
+    "common_ports": {
+      "123": 2,
+      "443": 3
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.37": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.37",
+    "period_start": "2026-08-24T02:57:10.074161+00:00",
+    "period_end": "2026-08-24T02:57:10.074161+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 2,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 1,
+      "20": 1
+    },
+    "common_destinations": {
+      "192.168.20.15": 2
+    },
+    "common_ports": {
+      "53": 1,
+      "123": 1
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.39": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.39",
+    "period_start": "2026-08-24T02:57:10.074230+00:00",
+    "period_end": "2026-08-24T02:57:10.074230+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 3,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 1,
+      "20": 2
+    },
+    "common_destinations": {
+      "1.1.1.1": 1,
+      "192.168.20.15": 1,
+      "198.51.100.23": 1
+    },
+    "common_ports": {
+      "80": 1,
+      "443": 2
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.58": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.58",
+    "period_start": "2026-08-24T02:57:10.074443+00:00",
+    "period_end": "2026-08-24T02:57:10.074443+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 1,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 1
+    },
+    "common_destinations": {
+      "192.168.10.20": 1
+    },
+    "common_ports": {
+      "443": 1
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.30": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.30",
+    "period_start": "2026-08-24T02:57:10.075227+00:00",
+    "period_end": "2026-08-24T02:57:10.075227+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 1,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 1
+    },
+    "common_destinations": {
+      "192.168.10.20": 1
+    },
+    "common_ports": {
+      "53": 1
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.43": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.43",
+    "period_start": "2026-08-24T02:57:10.075830+00:00",
+    "period_end": "2026-08-24T02:57:10.075830+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 2,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 2
+    },
+    "common_destinations": {
+      "1.1.1.1": 1,
+      "192.168.10.20": 1
+    },
+    "common_ports": {
+      "443": 1,
+      "123": 1
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.44": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.44",
+    "period_start": "2026-08-24T02:57:10.075964+00:00",
+    "period_end": "2026-08-24T02:57:10.075964+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 1,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 1
+    },
+    "common_destinations": {
+      "8.8.8.8": 1
+    },
+    "common_ports": {
+      "80": 1
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.24": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.24",
+    "period_start": "2026-08-24T02:57:10.082639+00:00",
+    "period_end": "2026-08-24T02:57:10.082639+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 1,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 1
+    },
+    "common_destinations": {
+      "192.168.20.15": 1
+    },
+    "common_ports": {
+      "80": 1
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.23": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.23",
+    "period_start": "2026-08-24T02:57:10.083595+00:00",
+    "period_end": "2026-08-24T02:57:10.083595+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 2,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 2
+    },
+    "common_destinations": {
+      "198.51.100.23": 1,
+      "192.168.10.20": 1
+    },
+    "common_ports": {
+      "53": 1,
+      "443": 1
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.29": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.29",
+    "period_start": "2026-08-24T02:57:10.084316+00:00",
+    "period_end": "2026-08-24T02:57:10.084316+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 3,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "19": 3
+    },
+    "common_destinations": {
+      "192.168.20.15": 1,
+      "192.168.10.10": 2
+    },
+    "common_ports": {
+      "53": 1,
+      "80": 1,
+      "443": 1
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.64": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.64",
+    "period_start": "2026-08-24T02:57:10.091261+00:00",
+    "period_end": "2026-08-24T02:57:10.091261+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 1,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "20": 1
+    },
+    "common_destinations": {
+      "198.51.100.23": 1
+    },
+    "common_ports": {
+      "80": 1
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.100": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.100",
+    "period_start": "2026-08-24T02:57:10.114197+00:00",
+    "period_end": "2026-08-24T02:57:10.114197+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "authentication": {
+        "count": 1,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "10": 1
+    },
+    "common_destinations": {},
+    "common_ports": {},
+    "anomaly_threshold": 3.0
+  },
+  "ip:10.0.0.5": {
+    "entity_type": "ip",
+    "entity_id": "10.0.0.5",
+    "period_start": "2026-08-24T02:57:10.114370+00:00",
+    "period_end": "2026-08-24T02:57:10.114370+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "authentication": {
+        "count": 1,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "10": 1
+    },
+    "common_destinations": {},
+    "common_ports": {},
+    "anomaly_threshold": 3.0
+  },
+  "ip:192.168.1.200": {
+    "entity_type": "ip",
+    "entity_id": "192.168.1.200",
+    "period_start": "2026-08-24T02:57:10.114450+00:00",
+    "period_end": "2026-08-24T02:57:10.114450+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "system_alert": {
+        "count": 1,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "10": 1
+    },
+    "common_destinations": {},
+    "common_ports": {},
+    "anomaly_threshold": 3.0
+  },
+  "ip:10.0.187.105": {
+    "entity_type": "ip",
+    "entity_id": "10.0.187.105",
+    "period_start": "2026-08-24T02:57:11.145520+00:00",
+    "period_end": "2026-08-24T02:57:11.145520+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "system_alert": {
+        "count": 1,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "2": 1
+    },
+    "common_destinations": {},
+    "common_ports": {},
+    "anomaly_threshold": 3.0
+  },
+  "ip:10.0.28.24": {
+    "entity_type": "ip",
+    "entity_id": "10.0.28.24",
+    "period_start": "2026-08-24T02:57:11.145653+00:00",
+    "period_end": "2026-08-24T02:57:11.145653+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "dns_query": {
+        "count": 1,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "2": 1
+    },
+    "common_destinations": {},
+    "common_ports": {},
+    "anomaly_threshold": 3.0
+  },
+  "ip:10.0.99.48": {
+    "entity_type": "ip",
+    "entity_id": "10.0.99.48",
+    "period_start": "2026-08-24T02:57:11.145730+00:00",
+    "period_end": "2026-08-24T02:57:11.145730+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "authentication": {
+        "count": 1,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "2": 1
+    },
+    "common_destinations": {},
+    "common_ports": {},
+    "anomaly_threshold": 3.0
+  },
+  "ip:10.0.32.24": {
+    "entity_type": "ip",
+    "entity_id": "10.0.32.24",
+    "period_start": "2026-08-24T02:57:11.145806+00:00",
+    "period_end": "2026-08-24T02:57:11.145806+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "authentication": {
+        "count": 1,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "2": 1
+    },
+    "common_destinations": {},
+    "common_ports": {},
+    "anomaly_threshold": 3.0
+  },
+  "ip:10.0.197.4": {
+    "entity_type": "ip",
+    "entity_id": "10.0.197.4",
+    "period_start": "2026-08-24T02:57:11.145871+00:00",
+    "period_end": "2026-08-24T02:57:11.145871+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "system_alert": {
+        "count": 1,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "2": 1
+    },
+    "common_destinations": {},
+    "common_ports": {},
+    "anomaly_threshold": 3.0
+  },
+  "ip:10.0.157.57": {
+    "entity_type": "ip",
+    "entity_id": "10.0.157.57",
+    "period_start": "2026-08-24T02:57:12.183241+00:00",
+    "period_end": "2026-08-24T02:57:12.183241+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "dns_query": {
+        "count": 1,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "2": 1
+    },
+    "common_destinations": {},
+    "common_ports": {},
+    "anomaly_threshold": 3.0
+  },
+  "ip:10.0.88.244": {
+    "entity_type": "ip",
+    "entity_id": "10.0.88.244",
+    "period_start": "2026-08-24T02:57:12.183389+00:00",
+    "period_end": "2026-08-24T02:57:12.183389+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "network_connection": {
+        "count": 1,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "2": 1
+    },
+    "common_destinations": {
+      "192.168.56.27": 1
+    },
+    "common_ports": {
+      "22": 1
+    },
+    "anomaly_threshold": 3.0
+  },
+  "ip:10.0.169.206": {
+    "entity_type": "ip",
+    "entity_id": "10.0.169.206",
+    "period_start": "2026-08-24T02:57:12.183482+00:00",
+    "period_end": "2026-08-24T02:57:12.183482+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "authentication": {
+        "count": 1,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "2": 1
+    },
+    "common_destinations": {},
+    "common_ports": {},
+    "anomaly_threshold": 3.0
+  },
+  "ip:10.0.134.215": {
+    "entity_type": "ip",
+    "entity_id": "10.0.134.215",
+    "period_start": "2026-08-24T02:57:13.220548+00:00",
+    "period_end": "2026-08-24T02:57:13.220548+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "dns_query": {
+        "count": 1,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "2": 1
+    },
+    "common_destinations": {},
+    "common_ports": {},
+    "anomaly_threshold": 3.0
+  },
+  "ip:10.0.97.180": {
+    "entity_type": "ip",
+    "entity_id": "10.0.97.180",
+    "period_start": "2026-08-24T02:57:13.220718+00:00",
+    "period_end": "2026-08-24T02:57:13.220718+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "dns_query": {
+        "count": 1,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "2": 1
+    },
+    "common_destinations": {},
+    "common_ports": {},
+    "anomaly_threshold": 3.0
+  },
+  "ip:10.0.237.86": {
+    "entity_type": "ip",
+    "entity_id": "10.0.237.86",
+    "period_start": "2026-08-24T02:57:14.258111+00:00",
+    "period_end": "2026-08-24T02:57:14.258111+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "system_alert": {
+        "count": 1,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "2": 1
+    },
+    "common_destinations": {},
+    "common_ports": {},
+    "anomaly_threshold": 3.0
+  },
+  "ip:10.0.59.67": {
+    "entity_type": "ip",
+    "entity_id": "10.0.59.67",
+    "period_start": "2026-08-24T02:57:14.258250+00:00",
+    "period_end": "2026-08-24T02:57:14.258250+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "authentication": {
+        "count": 1,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "2": 1
+    },
+    "common_destinations": {},
+    "common_ports": {},
+    "anomaly_threshold": 3.0
+  },
+  "ip:10.0.243.227": {
+    "entity_type": "ip",
+    "entity_id": "10.0.243.227",
+    "period_start": "2026-08-24T02:57:14.258330+00:00",
+    "period_end": "2026-08-24T02:57:14.258330+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "dns_query": {
+        "count": 1,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "2": 1
+    },
+    "common_destinations": {},
+    "common_ports": {},
+    "anomaly_threshold": 3.0
+  },
+  "ip:10.0.80.114": {
+    "entity_type": "ip",
+    "entity_id": "10.0.80.114",
+    "period_start": "2026-08-24T02:57:14.258404+00:00",
+    "period_end": "2026-08-24T02:57:14.258404+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "authentication": {
+        "count": 1,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "2": 1
+    },
+    "common_destinations": {},
+    "common_ports": {},
+    "anomaly_threshold": 3.0
+  },
+  "ip:10.0.168.108": {
+    "entity_type": "ip",
+    "entity_id": "10.0.168.108",
+    "period_start": "2026-08-24T02:57:14.258477+00:00",
+    "period_end": "2026-08-24T02:57:14.258477+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "dns_query": {
+        "count": 1,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "2": 1
+    },
+    "common_destinations": {},
+    "common_ports": {},
+    "anomaly_threshold": 3.0
+  },
+  "ip:10.0.52.220": {
+    "entity_type": "ip",
+    "entity_id": "10.0.52.220",
+    "period_start": "2026-08-24T02:57:15.296077+00:00",
+    "period_end": "2026-08-24T02:57:15.296077+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "dns_query": {
+        "count": 1,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "2": 1
+    },
+    "common_destinations": {},
+    "common_ports": {},
+    "anomaly_threshold": 3.0
+  },
+  "ip:10.0.94.43": {
+    "entity_type": "ip",
+    "entity_id": "10.0.94.43",
+    "period_start": "2026-08-24T02:57:15.296213+00:00",
+    "period_end": "2026-08-24T02:57:15.296213+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "system_alert": {
+        "count": 1,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "2": 1
+    },
+    "common_destinations": {},
+    "common_ports": {},
+    "anomaly_threshold": 3.0
+  },
+  "ip:10.0.85.174": {
+    "entity_type": "ip",
+    "entity_id": "10.0.85.174",
+    "period_start": "2026-08-24T02:57:15.296297+00:00",
+    "period_end": "2026-08-24T02:57:15.296297+00:00",
+    "baseline_status": "learning",
+    "event_frequencies": {
+      "authentication": {
+        "count": 1,
+        "mean": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "hourly_pattern": {
+      "2": 1
+    },
+    "common_destinations": {},
+    "common_ports": {},
+    "anomaly_threshold": 3.0
+  }
+}

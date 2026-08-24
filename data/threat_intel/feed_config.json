@@ -1,0 +1,33 @@
+{
+  "feeds": [
+    {
+      "name": "Local IOCs",
+      "url": "data/threat_intel/local_iocs.json",
+      "enabled": true,
+      "update_interval": 86400,
+      "format": "json",
+      "type": "local"
+    },
+    {
+      "name": "ThreatFox Recent Malware",
+      "url": "https://threatfox.abuse.ch/export/json/recent/",
+      "enabled": true,
+      "update_interval": 3600,
+      "format": "json",
+      "type": "threatfox"
+    },
+    {
+      "name": "AlienVault OTX Pulses",
+      "url": "https://otx.alienvault.com/api/v1/pulses/subscribed",
+      "enabled": false,
+      "update_interval": 7200,
+      "format": "json",
+      "type": "alienvault",
+      "api_key": ""
+    }
+  ],
+  "enable_auto_update": true,
+  "cache_ttl": 300,
+  "match_threshold": 0.5,
+  "log_level": "INFO"
+}

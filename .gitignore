@@ -1,0 +1,43 @@
+﻿# Byte-compiled / caches
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Build artifacts
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+venv_*/
+env/
+ENV/
+
+# Runtime output
+logs/
+*.log
+temp/
+tmp/
+reports/*.json
+
+# Secrets / local config (keep the example)
+.env
+*.env
+!.env.example
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# OneDrive conflict artifacts
+* - Copy.*
+*- Copy*

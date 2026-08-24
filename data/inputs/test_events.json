@@ -1,0 +1,40 @@
+# File: data/inputs/test_events.json
+[
+  {
+    "timestamp": "2024-01-15T10:30:00Z",
+    "source_ip": "192.168.1.100",
+    "destination_ip": "8.8.8.8",
+    "destination_port": 53,
+    "protocol": "udp",
+    "dns_query": "google.com",
+    "source_type": "test"
+  },
+  {
+    "timestamp": "2024-01-15T10:30:05Z",
+    "source_ip": "192.168.1.100",
+    "destination_ip": "8.8.8.8",
+    "destination_port": 53,
+    "protocol": "udp",
+    "dns_query": "malicious-domain.com",
+    "source_type": "test"
+  },
+  {
+    "timestamp": "2024-01-15T10:30:10Z",
+    "source_ip": "10.0.0.5",
+    "destination_ip": "192.168.1.100",
+    "destination_port": 445,
+    "protocol": "tcp",
+    "source_type": "test",
+    "action": "connection_attempt"
+  },
+  {
+    "timestamp": "2024-01-15T10:31:00Z",
+    "source_ip": "192.168.1.100",
+    "destination_ip": "external-server.com",
+    "destination_port": 443,
+    "protocol": "tcp",
+    "packet_size": 1048576,
+    "source_type": "test",
+    "action": "large_transfer"
+  }
+]

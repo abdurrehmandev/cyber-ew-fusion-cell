@@ -1,0 +1,46 @@
+{
+  "generated_at": "2026-05-31T20:10:17.577467+00:00",
+  "profile": {
+    "name": "production",
+    "description": "Hardened local production profile for a SOC workstation or server.",
+    "dashboard_port": 8501,
+    "api_port": 8080,
+    "bind_host": "127.0.0.1",
+    "api_key_required": true,
+    "retention_days": 180,
+    "archive_inputs_days": 30,
+    "log_retention_days": 180,
+    "alert_retention_days": 365,
+    "offline_mode": true,
+    "dashboard_url": "http://127.0.0.1:8501",
+    "api_url": "http://127.0.0.1:8080"
+  },
+  "dry_run": true,
+  "alerts": {
+    "path": "C:\\Users\\rehma\\OneDrive\\Documents\\cyber-ew-fusion-cell\\data\\outputs\\alerts.jsonl",
+    "kept": 115,
+    "archived": 0,
+    "archive_path": ""
+  },
+  "audit": {
+    "path": "C:\\Users\\rehma\\OneDrive\\Documents\\cyber-ew-fusion-cell\\data\\outputs\\audit_log.jsonl",
+    "kept": 0,
+    "archived": 0,
+    "archive_path": ""
+  },
+  "inputs": {
+    "directory": "C:\\Users\\rehma\\OneDrive\\Documents\\cyber-ew-fusion-cell\\data\\inputs\\live",
+    "archive_directory": "C:\\Users\\rehma\\OneDrive\\Documents\\cyber-ew-fusion-cell\\data\\archive\\data\\inputs\\live",
+    "archived": []
+  },
+  "sample_inputs": {
+    "directory": "C:\\Users\\rehma\\OneDrive\\Documents\\cyber-ew-fusion-cell\\data\\inputs\\sample_generated",
+    "archive_directory": "C:\\Users\\rehma\\OneDrive\\Documents\\cyber-ew-fusion-cell\\data\\archive\\data\\inputs\\sample_generated",
+    "archived": []
+  },
+  "logs": {
+    "directory": "C:\\Users\\rehma\\OneDrive\\Documents\\cyber-ew-fusion-cell\\logs",
+    "archive_directory": "C:\\Users\\rehma\\OneDrive\\Documents\\cyber-ew-fusion-cell\\data\\archive\\logs",
+    "archived": []
+  }
+}

@@ -1,0 +1,1345 @@
+[
+  {
+    "timestamp": "2026-05-31T19:35:56.137093+00:00",
+    "source_ip": "192.168.1.59",
+    "destination_ip": "192.168.10.10",
+    "destination_port": 123,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 3295,
+    "bytes_received": 11104,
+    "details": {
+      "success": true,
+      "service": "web",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:35:58.137093+00:00",
+    "source_ip": "192.168.1.60",
+    "destination_ip": "192.168.20.15",
+    "destination_port": 123,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 1723,
+    "bytes_received": 6915,
+    "details": {
+      "success": true,
+      "service": "ntp",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:36:00.137093+00:00",
+    "source_ip": "192.168.1.75",
+    "destination_ip": "203.0.113.50",
+    "destination_port": 53,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 3480,
+    "bytes_received": 13265,
+    "details": {
+      "success": true,
+      "service": "dns",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:36:02.137093+00:00",
+    "source_ip": "192.168.1.52",
+    "destination_ip": "192.168.10.20",
+    "destination_port": 123,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 1772,
+    "bytes_received": 10385,
+    "details": {
+      "success": true,
+      "service": "ntp",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:36:04.137093+00:00",
+    "source_ip": "192.168.1.21",
+    "destination_ip": "192.168.20.15",
+    "destination_port": 123,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 2007,
+    "bytes_received": 8273,
+    "details": {
+      "success": true,
+      "service": "dns",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:36:06.137093+00:00",
+    "source_ip": "192.168.1.70",
+    "destination_ip": "192.168.20.15",
+    "destination_port": 123,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 2591,
+    "bytes_received": 8878,
+    "details": {
+      "success": true,
+      "service": "dns",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:36:08.137093+00:00",
+    "source_ip": "192.168.1.55",
+    "destination_ip": "8.8.8.8",
+    "destination_port": 53,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 1788,
+    "bytes_received": 1963,
+    "details": {
+      "success": true,
+      "service": "ntp",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:36:10.137093+00:00",
+    "source_ip": "192.168.1.21",
+    "destination_ip": "192.168.10.20",
+    "destination_port": 80,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 548,
+    "bytes_received": 9536,
+    "details": {
+      "success": true,
+      "service": "dns",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:36:12.137093+00:00",
+    "source_ip": "192.168.1.48",
+    "destination_ip": "192.168.10.20",
+    "destination_port": 123,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 3377,
+    "bytes_received": 11131,
+    "details": {
+      "success": true,
+      "service": "web",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:36:14.137093+00:00",
+    "source_ip": "192.168.1.56",
+    "destination_ip": "192.168.20.15",
+    "destination_port": 80,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 3298,
+    "bytes_received": 18399,
+    "details": {
+      "success": true,
+      "service": "ntp",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:36:16.137093+00:00",
+    "source_ip": "192.168.1.61",
+    "destination_ip": "203.0.113.50",
+    "destination_port": 80,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 2287,
+    "bytes_received": 17459,
+    "details": {
+      "success": true,
+      "service": "ntp",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:36:18.137093+00:00",
+    "source_ip": "192.168.1.31",
+    "destination_ip": "192.168.20.15",
+    "destination_port": 53,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 3002,
+    "bytes_received": 19328,
+    "details": {
+      "success": true,
+      "service": "web",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:36:20.137093+00:00",
+    "source_ip": "192.168.1.77",
+    "destination_ip": "8.8.8.8",
+    "destination_port": 443,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 3129,
+    "bytes_received": 18496,
+    "details": {
+      "success": true,
+      "service": "ntp",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:36:22.137093+00:00",
+    "source_ip": "192.168.1.61",
+    "destination_ip": "203.0.113.50",
+    "destination_port": 123,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 3023,
+    "bytes_received": 4475,
+    "details": {
+      "success": true,
+      "service": "dns",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:36:24.137093+00:00",
+    "source_ip": "192.168.1.77",
+    "destination_ip": "1.1.1.1",
+    "destination_port": 123,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 905,
+    "bytes_received": 14600,
+    "details": {
+      "success": true,
+      "service": "ntp",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:36:26.137093+00:00",
+    "source_ip": "192.168.1.73",
+    "destination_ip": "203.0.113.50",
+    "destination_port": 53,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 1869,
+    "bytes_received": 11643,
+    "details": {
+      "success": true,
+      "service": "ntp",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:36:28.137093+00:00",
+    "source_ip": "192.168.1.65",
+    "destination_ip": "8.8.8.8",
+    "destination_port": 443,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 3155,
+    "bytes_received": 5297,
+    "details": {
+      "success": true,
+      "service": "dns",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:36:30.137093+00:00",
+    "source_ip": "192.168.1.60",
+    "destination_ip": "198.51.100.23",
+    "destination_port": 123,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 400,
+    "bytes_received": 7029,
+    "details": {
+      "success": true,
+      "service": "web",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:36:32.137093+00:00",
+    "source_ip": "192.168.1.62",
+    "destination_ip": "192.168.10.20",
+    "destination_port": 123,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 904,
+    "bytes_received": 4660,
+    "details": {
+      "success": true,
+      "service": "web",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:36:34.137093+00:00",
+    "source_ip": "192.168.1.45",
+    "destination_ip": "192.168.10.10",
+    "destination_port": 443,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 774,
+    "bytes_received": 7456,
+    "details": {
+      "success": true,
+      "service": "ntp",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:36:36.137093+00:00",
+    "source_ip": "192.168.1.73",
+    "destination_ip": "203.0.113.50",
+    "destination_port": 443,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 3404,
+    "bytes_received": 13881,
+    "details": {
+      "success": true,
+      "service": "dns",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:36:38.137093+00:00",
+    "source_ip": "192.168.1.65",
+    "destination_ip": "198.51.100.23",
+    "destination_port": 123,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 243,
+    "bytes_received": 17893,
+    "details": {
+      "success": true,
+      "service": "ntp",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:36:40.137093+00:00",
+    "source_ip": "192.168.1.32",
+    "destination_ip": "192.168.10.20",
+    "destination_port": 443,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 3246,
+    "bytes_received": 18095,
+    "details": {
+      "success": true,
+      "service": "web",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:36:42.137093+00:00",
+    "source_ip": "192.168.1.69",
+    "destination_ip": "198.51.100.23",
+    "destination_port": 123,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 3877,
+    "bytes_received": 10203,
+    "details": {
+      "success": true,
+      "service": "web",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:36:44.137093+00:00",
+    "source_ip": "192.168.1.57",
+    "destination_ip": "198.51.100.23",
+    "destination_port": 443,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 2674,
+    "bytes_received": 9231,
+    "details": {
+      "success": true,
+      "service": "ntp",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:36:46.137093+00:00",
+    "source_ip": "192.168.1.35",
+    "destination_ip": "198.51.100.23",
+    "destination_port": 53,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 2962,
+    "bytes_received": 294,
+    "details": {
+      "success": true,
+      "service": "web",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:36:48.137093+00:00",
+    "source_ip": "192.168.1.25",
+    "destination_ip": "192.168.20.15",
+    "destination_port": 123,
+    "protocol": "UDP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 2279,
+    "bytes_received": 19670,
+    "details": {
+      "success": true,
+      "service": "web",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:36:50.137093+00:00",
+    "source_ip": "192.168.1.28",
+    "destination_ip": "8.8.8.8",
+    "destination_port": 443,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 2739,
+    "bytes_received": 14759,
+    "details": {
+      "success": true,
+      "service": "dns",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:36:52.137093+00:00",
+    "source_ip": "192.168.1.62",
+    "destination_ip": "1.1.1.1",
+    "destination_port": 123,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 2133,
+    "bytes_received": 7162,
+    "details": {
+      "success": true,
+      "service": "web",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:36:54.137093+00:00",
+    "source_ip": "192.168.1.54",
+    "destination_ip": "203.0.113.50",
+    "destination_port": 123,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "info",
+    "bytes_sent": 2908,
+    "bytes_received": 5198,
+    "details": {
+      "success": true,
+      "service": "ntp",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:36:56.137093+00:00",
+    "source_ip": "192.168.1.66",
+    "username": "admin",
+    "event_type": "authentication",
+    "severity": "high",
+    "details": {
+      "success": false,
+      "reason": "invalid_password",
+      "attempts": 1,
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:36:58.137093+00:00",
+    "source_ip": "192.168.1.66",
+    "username": "admin",
+    "event_type": "authentication",
+    "severity": "high",
+    "details": {
+      "success": false,
+      "reason": "invalid_password",
+      "attempts": 2,
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:37:00.137093+00:00",
+    "source_ip": "192.168.1.66",
+    "username": "admin",
+    "event_type": "authentication",
+    "severity": "high",
+    "details": {
+      "success": false,
+      "reason": "invalid_password",
+      "attempts": 3,
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:37:02.137093+00:00",
+    "source_ip": "192.168.1.66",
+    "username": "admin",
+    "event_type": "authentication",
+    "severity": "high",
+    "details": {
+      "success": false,
+      "reason": "invalid_password",
+      "attempts": 4,
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:37:04.137093+00:00",
+    "source_ip": "192.168.1.66",
+    "username": "admin",
+    "event_type": "authentication",
+    "severity": "high",
+    "details": {
+      "success": false,
+      "reason": "invalid_password",
+      "attempts": 5,
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:37:06.137093+00:00",
+    "source_ip": "192.168.1.66",
+    "username": "admin",
+    "event_type": "authentication",
+    "severity": "high",
+    "details": {
+      "success": false,
+      "reason": "invalid_password",
+      "attempts": 6,
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:37:08.137093+00:00",
+    "source_ip": "192.168.1.66",
+    "username": "admin",
+    "event_type": "authentication",
+    "severity": "high",
+    "details": {
+      "success": false,
+      "reason": "invalid_password",
+      "attempts": 7,
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:37:10.137093+00:00",
+    "source_ip": "192.168.1.66",
+    "username": "admin",
+    "event_type": "authentication",
+    "severity": "high",
+    "details": {
+      "success": false,
+      "reason": "invalid_password",
+      "attempts": 8,
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:37:12.137093+00:00",
+    "source_ip": "192.168.1.66",
+    "username": "admin",
+    "event_type": "authentication",
+    "severity": "high",
+    "details": {
+      "success": false,
+      "reason": "invalid_password",
+      "attempts": 9,
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:37:14.137093+00:00",
+    "source_ip": "192.168.1.66",
+    "username": "admin",
+    "event_type": "authentication",
+    "severity": "high",
+    "details": {
+      "success": false,
+      "reason": "invalid_password",
+      "attempts": 10,
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:37:16.137093+00:00",
+    "source_ip": "192.168.1.66",
+    "username": "admin",
+    "event_type": "authentication",
+    "severity": "high",
+    "details": {
+      "success": false,
+      "reason": "invalid_password",
+      "attempts": 11,
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:37:18.137093+00:00",
+    "source_ip": "192.168.1.66",
+    "username": "admin",
+    "event_type": "authentication",
+    "severity": "high",
+    "details": {
+      "success": false,
+      "reason": "invalid_password",
+      "attempts": 12,
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:37:20.137093+00:00",
+    "source_ip": "192.168.1.66",
+    "username": "admin",
+    "event_type": "authentication",
+    "severity": "high",
+    "details": {
+      "success": false,
+      "reason": "invalid_password",
+      "attempts": 13,
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:37:22.137093+00:00",
+    "source_ip": "192.168.1.66",
+    "username": "admin",
+    "event_type": "authentication",
+    "severity": "high",
+    "details": {
+      "success": false,
+      "reason": "invalid_password",
+      "attempts": 14,
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:37:24.137093+00:00",
+    "source_ip": "192.168.1.66",
+    "destination_ip": "192.168.20.15",
+    "destination_port": 445,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "high",
+    "details": {
+      "success": false,
+      "message": "SMB connection refused",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:37:26.137093+00:00",
+    "source_ip": "192.168.1.66",
+    "destination_ip": "192.168.20.15",
+    "destination_port": 445,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "high",
+    "details": {
+      "success": false,
+      "message": "SMB connection refused",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:37:28.137093+00:00",
+    "source_ip": "192.168.1.66",
+    "destination_ip": "192.168.20.15",
+    "destination_port": 445,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "high",
+    "details": {
+      "success": false,
+      "message": "SMB connection refused",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:37:30.137093+00:00",
+    "source_ip": "192.168.1.66",
+    "destination_ip": "192.168.10.10",
+    "destination_port": 445,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "high",
+    "details": {
+      "success": false,
+      "message": "SMB connection refused",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:37:32.137093+00:00",
+    "source_ip": "192.168.1.66",
+    "destination_ip": "192.168.20.15",
+    "destination_port": 445,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "high",
+    "details": {
+      "success": false,
+      "message": "SMB connection refused",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:37:34.137093+00:00",
+    "source_ip": "192.168.1.66",
+    "destination_ip": "192.168.20.15",
+    "destination_port": 445,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "high",
+    "details": {
+      "success": false,
+      "message": "SMB connection refused",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:37:36.137093+00:00",
+    "source_ip": "192.168.1.66",
+    "destination_ip": "192.168.10.20",
+    "destination_port": 445,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "high",
+    "details": {
+      "success": false,
+      "message": "SMB connection refused",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:37:38.137093+00:00",
+    "source_ip": "192.168.1.66",
+    "destination_ip": "192.168.10.20",
+    "destination_port": 445,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "high",
+    "details": {
+      "success": false,
+      "message": "SMB connection refused",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:37:40.137093+00:00",
+    "source_ip": "192.168.1.42",
+    "destination_ip": "203.0.113.50",
+    "destination_port": 443,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "medium",
+    "bytes_sent": 216,
+    "bytes_received": 2018,
+    "details": {
+      "interval": "periodic",
+      "repeat_count": 5,
+      "message": "beacon-like callback",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:37:42.137093+00:00",
+    "source_ip": "192.168.1.42",
+    "destination_ip": "203.0.113.50",
+    "destination_port": 443,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "medium",
+    "bytes_sent": 351,
+    "bytes_received": 4616,
+    "details": {
+      "interval": "periodic",
+      "repeat_count": 5,
+      "message": "beacon-like callback",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:37:44.137093+00:00",
+    "source_ip": "192.168.1.42",
+    "destination_ip": "203.0.113.50",
+    "destination_port": 443,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "medium",
+    "bytes_sent": 282,
+    "bytes_received": 4805,
+    "details": {
+      "interval": "periodic",
+      "repeat_count": 5,
+      "message": "beacon-like callback",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:37:46.137093+00:00",
+    "source_ip": "192.168.1.42",
+    "destination_ip": "203.0.113.50",
+    "destination_port": 443,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "medium",
+    "bytes_sent": 1152,
+    "bytes_received": 4548,
+    "details": {
+      "interval": "periodic",
+      "repeat_count": 5,
+      "message": "beacon-like callback",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:37:48.137093+00:00",
+    "source_ip": "192.168.1.42",
+    "destination_ip": "203.0.113.50",
+    "destination_port": 443,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "medium",
+    "bytes_sent": 952,
+    "bytes_received": 970,
+    "details": {
+      "interval": "periodic",
+      "repeat_count": 5,
+      "message": "beacon-like callback",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:37:50.137093+00:00",
+    "source_ip": "192.168.1.42",
+    "destination_ip": "203.0.113.50",
+    "destination_port": 443,
+    "protocol": "TCP",
+    "event_type": "network_connection",
+    "severity": "medium",
+    "bytes_sent": 379,
+    "bytes_received": 2379,
+    "details": {
+      "interval": "periodic",
+      "repeat_count": 5,
+      "message": "beacon-like callback",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:37:52.137093+00:00",
+    "source_ip": "192.168.1.55",
+    "event_type": "file_access",
+    "severity": "critical",
+    "file_path": "C:/Users/Public/document_122.docx.encrypted",
+    "details": {
+      "operation": "encrypt",
+      "message": "bulk file rename detected",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:37:54.137093+00:00",
+    "source_ip": "192.168.1.55",
+    "event_type": "file_access",
+    "severity": "critical",
+    "file_path": "C:/Users/Public/document_332.docx.encrypted",
+    "details": {
+      "operation": "encrypt",
+      "message": "bulk file rename detected",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:37:56.137093+00:00",
+    "source_ip": "192.168.1.55",
+    "event_type": "file_access",
+    "severity": "critical",
+    "file_path": "C:/Users/Public/document_364.docx.encrypted",
+    "details": {
+      "operation": "encrypt",
+      "message": "bulk file rename detected",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:37:58.137093+00:00",
+    "source_ip": "192.168.1.55",
+    "event_type": "file_access",
+    "severity": "critical",
+    "file_path": "C:/Users/Public/document_410.docx.crypt",
+    "details": {
+      "operation": "encrypt",
+      "message": "bulk file rename detected",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:38:00.137093+00:00",
+    "source_ip": "192.168.1.55",
+    "event_type": "file_access",
+    "severity": "critical",
+    "file_path": "C:/Users/Public/document_237.docx.locked",
+    "details": {
+      "operation": "encrypt",
+      "message": "bulk file rename detected",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:38:02.137093+00:00",
+    "source_ip": "192.168.1.55",
+    "event_type": "file_access",
+    "severity": "critical",
+    "file_path": "C:/Users/Public/document_413.docx.crypt",
+    "details": {
+      "operation": "encrypt",
+      "message": "bulk file rename detected",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:38:04.137093+00:00",
+    "source_ip": "192.168.1.55",
+    "event_type": "file_access",
+    "severity": "critical",
+    "file_path": "C:/Users/Public/document_345.docx.locked",
+    "details": {
+      "operation": "encrypt",
+      "message": "bulk file rename detected",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:38:06.137093+00:00",
+    "source_ip": "192.168.1.55",
+    "event_type": "file_access",
+    "severity": "critical",
+    "file_path": "C:/Users/Public/document_386.docx.locked",
+    "details": {
+      "operation": "encrypt",
+      "message": "bulk file rename detected",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:38:08.137093+00:00",
+    "source_ip": "192.168.1.55",
+    "event_type": "file_access",
+    "severity": "critical",
+    "file_path": "C:/Users/Public/document_13.docx.locked",
+    "details": {
+      "operation": "encrypt",
+      "message": "bulk file rename detected",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:38:10.137093+00:00",
+    "source_ip": "192.168.1.55",
+    "event_type": "file_access",
+    "severity": "critical",
+    "file_path": "C:/Users/Public/document_219.docx.crypt",
+    "details": {
+      "operation": "encrypt",
+      "message": "bulk file rename detected",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:38:12.137093+00:00",
+    "source_ip": "192.168.1.55",
+    "event_type": "file_access",
+    "severity": "critical",
+    "file_path": "C:/Users/Public/document_406.docx.locked",
+    "details": {
+      "operation": "encrypt",
+      "message": "bulk file rename detected",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:38:14.137093+00:00",
+    "source_ip": "192.168.1.55",
+    "event_type": "file_access",
+    "severity": "critical",
+    "file_path": "C:/Users/Public/document_53.docx.crypt",
+    "details": {
+      "operation": "encrypt",
+      "message": "bulk file rename detected",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:38:16.137093+00:00",
+    "source_ip": "192.168.1.55",
+    "event_type": "file_access",
+    "severity": "critical",
+    "file_path": "C:/Users/Public/document_42.docx.encrypted",
+    "details": {
+      "operation": "encrypt",
+      "message": "bulk file rename detected",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:38:18.137093+00:00",
+    "source_ip": "192.168.1.55",
+    "event_type": "file_access",
+    "severity": "critical",
+    "file_path": "C:/Users/Public/document_8.docx.crypt",
+    "details": {
+      "operation": "encrypt",
+      "message": "bulk file rename detected",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:38:20.137093+00:00",
+    "source_ip": "192.168.1.55",
+    "event_type": "file_access",
+    "severity": "critical",
+    "file_path": "C:/Users/Public/document_323.docx.locked",
+    "details": {
+      "operation": "encrypt",
+      "message": "bulk file rename detected",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:38:22.137093+00:00",
+    "source_ip": "192.168.1.55",
+    "event_type": "file_access",
+    "severity": "critical",
+    "file_path": "C:/Users/Public/document_440.docx.crypt",
+    "details": {
+      "operation": "encrypt",
+      "message": "bulk file rename detected",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:38:24.137093+00:00",
+    "source_ip": "192.168.1.55",
+    "event_type": "file_access",
+    "severity": "critical",
+    "file_path": "C:/Users/Public/document_81.docx.encrypted",
+    "details": {
+      "operation": "encrypt",
+      "message": "bulk file rename detected",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:38:26.137093+00:00",
+    "source_ip": "192.168.1.55",
+    "event_type": "file_access",
+    "severity": "critical",
+    "file_path": "C:/Users/Public/document_101.docx.crypt",
+    "details": {
+      "operation": "encrypt",
+      "message": "bulk file rename detected",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:38:28.137093+00:00",
+    "source_ip": "192.168.1.55",
+    "event_type": "file_access",
+    "severity": "critical",
+    "file_path": "C:/Users/Public/document_41.docx.encrypted",
+    "details": {
+      "operation": "encrypt",
+      "message": "bulk file rename detected",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:38:30.137093+00:00",
+    "source_ip": "192.168.1.55",
+    "event_type": "file_access",
+    "severity": "critical",
+    "file_path": "C:/Users/Public/document_282.docx.encrypted",
+    "details": {
+      "operation": "encrypt",
+      "message": "bulk file rename detected",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:38:32.137093+00:00",
+    "source_ip": "192.168.1.55",
+    "event_type": "file_access",
+    "severity": "critical",
+    "file_path": "C:/Users/Public/document_467.docx.crypt",
+    "details": {
+      "operation": "encrypt",
+      "message": "bulk file rename detected",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:38:34.137093+00:00",
+    "source_ip": "192.168.1.55",
+    "event_type": "file_access",
+    "severity": "critical",
+    "file_path": "C:/Users/Public/document_296.docx.locked",
+    "details": {
+      "operation": "encrypt",
+      "message": "bulk file rename detected",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:38:36.137093+00:00",
+    "source_ip": "192.168.1.55",
+    "event_type": "file_access",
+    "severity": "critical",
+    "file_path": "C:/Users/Public/document_126.docx.crypt",
+    "details": {
+      "operation": "encrypt",
+      "message": "bulk file rename detected",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:38:38.137093+00:00",
+    "source_ip": "192.168.1.55",
+    "event_type": "file_access",
+    "severity": "critical",
+    "file_path": "C:/Users/Public/document_221.docx.encrypted",
+    "details": {
+      "operation": "encrypt",
+      "message": "bulk file rename detected",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  },
+  {
+    "timestamp": "2026-05-31T19:38:40.137093+00:00",
+    "source_ip": "192.168.1.55",
+    "username": "admin",
+    "event_type": "process_creation",
+    "severity": "medium",
+    "process_name": "tar.exe",
+    "details": {
+      "command": "7z.exe a C:/Temp/archive.7z C:/Sensitive/*",
+      "message": "archive creation before outbound transfer",
+      "demo_run_id": "20260531_193842"
+    },
+    "demo_run_id": "20260531_193842",
+    "source_name": "demo_20260531_193842.json"
+  }
+]

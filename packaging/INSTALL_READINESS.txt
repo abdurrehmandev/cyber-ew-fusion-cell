@@ -1,0 +1,20 @@
+Cyber-EW Fusion Cell setup readiness
+
+This installer configures a local SOC workstation. For full live visibility,
+run setup as administrator and select the connectors you want to enable.
+
+Operation modes:
+- Demo mode: generated telemetry stays enabled for presentations and training.
+- Hybrid mode: generated telemetry stays enabled while live collectors are armed.
+- Production mode: generated telemetry is disabled; only real inputs are used.
+
+Live capability requirements:
+- Windows Security log: administrator rights are required.
+- Sysmon: install Microsoft Sysmon separately with a trusted configuration.
+- Npcap: install Npcap separately to enable live packet capture.
+- Syslog: send firewall, VPN, Linux, or appliance logs to UDP 514 on this host.
+- JSON drop folder: place JSON, JSONL, EVE, Zeek, or log files under the live input folder.
+
+Cloud or paid features such as commercial threat intelligence and generative AI
+assistants are represented in the app as optional/demo modules until credentials
+or provider integrations are configured.

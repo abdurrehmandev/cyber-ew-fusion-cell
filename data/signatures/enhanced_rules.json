@@ -1,0 +1,64 @@
+[
+  {
+    "id": "rule_high_001",
+    "name": "High Severity Brute Force",
+    "description": "Multiple failed authentication attempts with high count",
+    "severity": "high",
+    "category": "credential_access",
+    "tags": [
+      "brute_force",
+      "authentication",
+      "critical"
+    ],
+    "enabled": true,
+    "logic": "all",
+    "conditions": [
+      {
+        "type": "equals",
+        "field": "event_type",
+        "value": "authentication"
+      },
+      {
+        "type": "regex",
+        "field": "details.success",
+        "pattern": "false|0|failed"
+      },
+      {
+        "type": "greater_than",
+        "field": "details.attempts",
+        "value": "5"
+      }
+    ]
+  },
+  {
+    "id": "rule_med_001",
+    "name": "Suspicious Network Activity",
+    "description": "Unusual network connections to known bad ports",
+    "severity": "medium",
+    "category": "network",
+    "tags": [
+      "scanning",
+      "reconnaissance",
+      "suspicious"
+    ],
+    "enabled": true,
+    "logic": "any",
+    "conditions": [
+      {
+        "type": "in_list",
+        "field": "port",
+        "values": [
+          "4444",
+          "31337",
+          "6667",
+          "12345"
+        ]
+      },
+      {
+        "type": "regex",
+        "field": "details.message",
+        "pattern": "port.*scan|scan.*port"
+      }
+    ]
+  }
+]

@@ -1,0 +1,188 @@
+{
+  "status": "running",
+  "updated_at": "2026-06-01T08:52:09.275248+00:00",
+  "service_pid": 26612,
+  "dashboard_pid": 18980,
+  "api_pid": 16060,
+  "message": "",
+  "pipeline": {
+    "events_processed": 12212,
+    "alerts_generated": 57,
+    "threat_intel_matches": 2,
+    "ml_anomalies_detected": 0,
+    "signature_matches": 0,
+    "start_time": "2026-06-01 08:11:34.902207",
+    "uptime": 2434.373041,
+    "processing_rate": 5.016486706977133,
+    "queue_status": {
+      "raw_events": 0,
+      "normalized_events": 0,
+      "analyzed_events": 0,
+      "correlated_events": 0,
+      "scored_events": 0
+    },
+    "runtime_seconds": 2434.373041,
+    "engine_stats": {
+      "behavior_engine": {
+        "events_processed": 12212,
+        "profiles_created": 7169,
+        "profiles_updated": 800,
+        "patterns_detected": 164,
+        "anomalies_found": 0,
+        "baseline_active": 0,
+        "alerts_sent": 0,
+        "total_profiles": 7169,
+        "active_sequences": 7167,
+        "total_patterns": 164
+      },
+      "scoring_engine": {
+        "scores_calculated": 12212,
+        "high_risk_scores": 57,
+        "average_score": 0.34354956731220776,
+        "score_distribution": {
+          "info": 0,
+          "low": 12104,
+          "medium": 51,
+          "high": 57,
+          "critical": 0
+        },
+        "recent_scores": [
+          {
+            "score": 0.33000000000000007,
+            "level": "low"
+          },
+          {
+            "score": 0.33000000000000007,
+            "level": "low"
+          },
+          {
+            "score": 0.33000000000000007,
+            "level": "low"
+          },
+          {
+            "score": 0.33000000000000007,
+            "level": "low"
+          },
+          {
+            "score": 0.33000000000000007,
+            "level": "low"
+          },
+          {
+            "score": 0.4766666666666668,
+            "level": "low"
+          },
+          {
+            "score": 0.33000000000000007,
+            "level": "low"
+          },
+          {
+            "score": 0.33000000000000007,
+            "level": "low"
+          },
+          {
+            "score": 0.33000000000000007,
+            "level": "low"
+          },
+          {
+            "score": 0.33000000000000007,
+            "level": "low"
+          }
+        ],
+        "current_trend": "stable"
+      },
+      "threat_intel_engine": {
+        "total_iocs": 3,
+        "feed_stats": {
+          "ThreatFox Malware": {
+            "last_update": "2026-06-01T08:11:35.617690+00:00",
+            "ioc_count": 0,
+            "update_count": 1,
+            "success": true
+          },
+          "Local IOCs": {
+            "last_update": "2026-06-01T08:11:35.618690+00:00",
+            "ioc_count": 3,
+            "update_count": 1,
+            "success": true
+          }
+        },
+        "matches": 2,
+        "last_update": "2026-06-01 08:11:35.618690+00:00",
+        "feed_count": 2,
+        "cache_size": {
+          "ip": 2,
+          "domain": 1
+        }
+      },
+      "ml_anomaly_engine": {
+        "events_processed": 12212,
+        "anomalies_detected": 0,
+        "last_training": null,
+        "model_accuracy": 0.0,
+        "feature_history_size": 10000,
+        "models_trained": false,
+        "active_models": [
+          "isolation_forest"
+        ],
+        "ml_available": true
+      },
+      "signature_engine": {
+        "total_rules": 5,
+        "enabled_rules": 5,
+        "matches": 0,
+        "last_scan": null,
+        "yara_available": true,
+        "categories": {
+          "credential_access": 2,
+          "network": 1,
+          "reconnaissance": 1,
+          "malware": 1
+        }
+      },
+      "collector_manager": {
+        "windows_eventlog": {
+          "enabled": true,
+          "available": true,
+          "channels": {
+            "Security": {
+              "available": false,
+              "error": "(5, 'EvtQuery', 'Access is denied.')"
+            },
+            "System": {
+              "available": true,
+              "last_record_id": 3971
+            },
+            "Application": {
+              "available": true,
+              "last_record_id": 1600
+            },
+            "Microsoft-Windows-Sysmon/Operational": {
+              "available": false,
+              "error": "(15007, 'EvtQuery', 'The specified channel could not be found.')"
+            }
+          },
+          "events_emitted": 134,
+          "errors": 1614
+        },
+        "pcap_live": {
+          "enabled": false,
+          "available": true,
+          "interface": "default",
+          "bpf_filter": "ip",
+          "packets_seen": 0,
+          "events_emitted": 0,
+          "errors": 0
+        }
+      }
+    },
+    "threat_detection_summary": {
+      "events_processed": 12212,
+      "threat_intel_matches": 2,
+      "ml_anomalies": 0,
+      "signature_matches": 0,
+      "alerts_generated": 57,
+      "detection_rate": 0.46675401244677367
+    }
+  },
+  "persisted_alerts": 68
+}

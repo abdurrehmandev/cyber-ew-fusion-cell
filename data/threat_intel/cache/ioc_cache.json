@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-08-24T02:57:21.317709+00:00",
+  "iocs": [
+    {
+      "value": "192.168.1.100",
+      "ioc_type": "ip",
+      "threat_type": "malware_c2",
+      "source": "local_observation",
+      "confidence": 0.95,
+      "first_seen": "2026-02-09T07:26:24.333860+00:00",
+      "last_seen": "2026-02-09T07:26:24.333860+00:00",
+      "description": "Known malware command and control server",
+      "tags": [
+        "malware",
+        "c2",
+        "botnet"
+      ]
+    },
+    {
+      "value": "10.0.0.99",
+      "ioc_type": "ip",
+      "threat_type": "test_malware",
+      "source": "user_added",
+      "confidence": 0.8,
+      "first_seen": "2026-02-09T07:26:43.067472+00:00",
+      "last_seen": "2026-02-09T07:26:43.067472+00:00",
+      "description": "Test IOC",
+      "tags": [
+        "test"
+      ]
+    },
+    {
+      "value": "malicious-domain.com",
+      "ioc_type": "domain",
+      "threat_type": "phishing",
+      "source": "threat_feed",
+      "confidence": 0.85,
+      "first_seen": "2026-02-09T07:26:24.333860+00:00",
+      "last_seen": "2026-02-09T07:26:24.333860+00:00",
+      "description": "Phishing domain",
+      "tags": [
+        "phishing",
+        "malicious"
+      ]
+    }
+  ]
+}
