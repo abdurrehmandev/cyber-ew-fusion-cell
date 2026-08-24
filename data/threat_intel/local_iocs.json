@@ -40,5 +40,18 @@
     "tags": [
       "test"
     ]
+  },
+  {
+    "value": "10.0.0.99",
+    "ioc_type": "ip",
+    "threat_type": "test_malware",
+    "source": "user_added",
+    "confidence": 0.8,
+    "first_seen": "2026-08-24T04:28:27.498111+00:00",
+    "last_seen": "2026-08-24T04:28:27.498111+00:00",
+    "description": "Test IOC",
+    "tags": [
+      "test"
+    ]
   }
 ]
