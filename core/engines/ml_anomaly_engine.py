@@ -477,6 +477,23 @@ class MLAnomalyEngine:
             self.models_trained = loaded_models > 0 and self._models_ready()
             if self.models_trained:
                 logger.info("Loaded trained ML models")
+            elif loaded_models > 0:
+                # A model file was present but deserialized to an unfitted OR
+                # version-incompatible estimator (e.g. pickled under sklearn
+                # <1.4, whose tree template lacks `monotonic_cst`). Keeping that
+                # object would POISON retraining: a later train_models() calls
+                # .fit() on it and raises
+                #   "'ExtraTreeRegressor' object has no attribute 'monotonic_cst'"
+                # leaving the engine permanently stuck in heuristic mode. Discard
+                # the unusable artifacts and restore fresh, fittable estimators so
+                # the (auto-)retraining path stays alive. Heuristic detection
+                # remains active until real training completes.
+                logger.warning(
+                    "Loaded ML model artifacts are unfitted or version-incompatible; "
+                    "re-initializing fresh estimators so retraining can proceed"
+                )
+                self._init_models()
+                self.models_trained = False
             else:
                 logger.warning("No fitted ML models loaded; using heuristic anomaly detection until enough data is collected")
             

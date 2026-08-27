@@ -41,3 +41,10 @@ Thumbs.db
 # OneDrive conflict artifacts
 * - Copy.*
 *- Copy*
+
+# Streamlit agent-skill symlinks (auto-created by `streamlit run`; env-specific, not for VCS)
+.agents/skills/developing-with-streamlit
+.claude/skills/developing-with-streamlit
+
+# Generated audit pipeline artifacts
+audit/_pipeline_run_tmp/
