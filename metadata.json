@@ -1,0 +1,6 @@
+{
+  "name": "Cyber-EW Fusion Cell",
+  "description": "Multi-domain cyber & tactical electronic warfare (EW) fusion platform with adversary simulation sandbox, synchronized cross-domain timeline scrubber, air-gap STIX 2.1 evidence packager, live PCAP DPI dissection, 3D geospatial SIGINT mapping, and MITRE D3FEND active defense.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

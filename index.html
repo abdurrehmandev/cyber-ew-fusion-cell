@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cyber-EW Fusion Cell</title>
+    <script>
+      (function() {
+        try {
+          var origFetch = window.fetch;
+          var desc = Object.getOwnPropertyDescriptor(window, "fetch") ||
+                     Object.getOwnPropertyDescriptor(Object.getPrototypeOf(window), "fetch") ||
+                     (typeof Window !== "undefined" && Object.getOwnPropertyDescriptor(Window.prototype, "fetch"));
+          if (!desc || !desc.set) {
+            try {
+              Object.defineProperty(window, "fetch", {
+                configurable: true,
+                enumerable: true,
+                get: function() { return origFetch; },
+                set: function(v) { origFetch = v; }
+              });
+            } catch(e) {}
+          }
+        } catch(e) {}
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-[#0b0f14] text-[#e8edf2] antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
