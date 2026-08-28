@@ -1,0 +1,1 @@
+{"timestamp":"2026-08-27T23:20:00.000Z","src_ip":"192.168.1.55","dest_ip":"198.51.100.23","alert":{"signature":"Test Suricata signature","category":"Attempted Admin Privilege Gain"}}

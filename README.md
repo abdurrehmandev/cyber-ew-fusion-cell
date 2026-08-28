@@ -21,163 +21,34 @@ The project is designed for on-prem and air-gapped SOC environments where repeat
 
 ## Quick Start
 
-Use the Python interpreter available on your system or recreate the broken virtual environment first.
+This repository currently implements a Node.js + TypeScript web application (server.ts plus a React/Vite frontend). The README previously documented a Python pipeline; that Python implementation is not present in this checkout. To run the web service locally:
 
 ```powershell
-python -m venv venv
-venv\Scripts\python.exe -m pip install -r requirements.txt
+# Install Node dependencies
+npm install
+
+# Start development server (Vite + Node API)
+npm run dev
+
+# Production build
+npm run build
+npm start
 ```
 
-### OneDrive Files On-Demand
+By default the server listens on port 3000. Useful API endpoints:
 
-If the project is stored in OneDrive and Python imports stall, use the local-runtime
-launcher. It mirrors only the runnable source and data into `%LOCALAPPDATA%` before
-starting, leaving this folder as the editable source of truth:
+- `GET http://localhost:3000/api/health`
+- `GET http://localhost:3000/api/readiness`
+- `GET http://localhost:3000/api/metrics`
+- `GET http://localhost:3000/api/alerts`
+- `GET http://localhost:3000/api/attack/timeline`
 
-```powershell
-.\scripts\run_local_runtime.ps1 -Command test
-.\scripts\run_local_runtime.ps1 -Command start -Profile production
-```
+Notes:
+- If your environment does not have Node/npm installed, install Node.js (LTS) first.
+- The project data folder is `data/`; alerts are read from `data/outputs/alerts.jsonl`.
+- If Python pipeline features are required, they must be reimplemented or the codebase split into a separate Python service.
 
-Use the operator CLI for normal work:
-
-```powershell
-venv\Scripts\python.exe manage.py doctor
-venv\Scripts\python.exe manage.py start
-venv\Scripts\python.exe manage.py status
-venv\Scripts\python.exe manage.py demo
-venv\Scripts\python.exe manage.py test
-```
-
-Operator commands:
-
-- `manage.py doctor`: validate dependencies, paths, ports, and service health.
-- `manage.py start`: start pipeline, dashboard, and API.
-- `manage.py stop`: stop managed service processes.
-- `manage.py restart`: clean restart.
-- `manage.py status`: print health and write `data/outputs/operator_health.json`.
-- `manage.py demo`: start the service if needed and inject a fresh attack scenario into live ingestion.
-- `manage.py test`: run compile, `test_all.py`, pytest smoke tests, and `main.py --test`.
-- `manage.py logs`: show the latest log tail.
-- `manage.py open`: open the dashboard.
-- `manage.py profiles`: list deployment profiles.
-- `manage.py report`: write deployment and security readiness reports.
-- `manage.py cleanup`: apply retention policy and archive old local artifacts.
-
-Deployment profiles:
-
-- `dev`: local development profile.
-- `demo`: presentation/demo profile.
-- `offline`: air-gapped local profile with API key enforcement.
-- `production`: hardened local SOC profile with API key enforcement and longer retention.
-
-Example:
-
-```powershell
-venv\Scripts\python.exe manage.py start --profile production
-venv\Scripts\python.exe manage.py report --profile production
-```
-
-Run the built-in smoke test:
-
-```powershell
-venv\Scripts\python.exe main.py --test --verbose
-```
-
-Start live monitoring:
-
-```powershell
-venv\Scripts\python.exe main.py --monitor
-```
-
-Run the full local live service:
-
-```powershell
-venv\Scripts\python.exe run_live.py
-```
-
-This starts:
-
-- Detection pipeline
-- Streamlit dashboard on `http://127.0.0.1:8501`
-- REST API on `http://127.0.0.1:8080`
-
-Drop telemetry files into `data/inputs/live/`; the pipeline will ingest new files and persist alerts to `data/outputs/alerts.jsonl`.
-
-Production sensor files supported in the live drop folder:
-
-- Suricata: `.json`, `.jsonl`, `.eve` records with `src_ip`, `dest_ip`, and `alert` fields.
-- Zeek: `.log` or `.tsv` files with `#fields` headers, including `conn.log`, `dns.log`, and `http.log`.
-- Windows/Sysmon: JSON exports with `EventID`, `EventData`, Winlogbeat `winlog.*`, or process/file/network fields.
-
-Start the analyst dashboard:
-
-```powershell
-venv\Scripts\python.exe run_dashboard.py
-```
-
-Then open `http://127.0.0.1:8501`.
-
-Start only the REST API:
-
-```powershell
-venv\Scripts\python.exe run_api.py
-```
-
-Useful local API endpoints:
-
-- `GET /health`: service heartbeat and persisted alert count.
-- `GET /readiness`: storage and engine readiness.
-- `GET /metrics`: pipeline, case, IOC, and alert metrics.
-- `GET /alerts?limit=100`: recent deduplicated alerts.
-- `GET /attack/timeline?limit=250`: ATT&CK-style timeline and investigation summary.
-- `GET /cases`: analyst cases.
-- `POST /cases`: create or update a case.
-- `GET /iocs`: local IOC watchlist.
-- `POST /iocs`: add or update an IOC.
-- `GET /audit`: recent analyst actions.
-- `GET /export/bundle`: SOC evidence bundle.
-
-Set `CYBER_EW_API_KEY` before starting the API to require `X-API-Key` on mutating endpoints.
-
-Open the interactive console:
-
-```powershell
-venv\Scripts\python.exe main.py --mode console
-```
-
-Generate sample telemetry:
-
-```powershell
-venv\Scripts\python.exe scripts\generate_sample_data.py --count 100
-```
-
-Inject a live SOC demo scenario into the running dashboard:
-
-```powershell
-venv\Scripts\python.exe manage.py demo --count 120 --wait 15
-```
-
-This writes fresh JSON telemetry into `data/inputs/live/`, keeps a syslog copy under
-`data/inputs/sample_generated/`, and waits for the live pipeline counters to move.
-
-Simulate live pipeline alerts for dashboard testing:
-
-```powershell
-venv\Scripts\python.exe scripts\simulate_live_alerts.py --clear --count 6
-```
-
-Archive old local artifacts using the selected profile retention policy:
-
-```powershell
-venv\Scripts\python.exe manage.py cleanup --profile production
-```
-
-Preview cleanup without moving or rewriting files:
-
-```powershell
-venv\Scripts\python.exe manage.py cleanup --profile production --dry-run
-```
+If you want, run `npm install` and `npm run dev` locally and then use the included smoke-test script (`scripts\smoke_test.ps1`) to validate the endpoints.
 
 ## Windows Operator Scripts
 

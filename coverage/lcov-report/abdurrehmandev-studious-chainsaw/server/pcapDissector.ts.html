@@ -1,0 +1,1249 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for abdurrehmandev-studious-chainsaw/server/pcapDissector.ts</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">abdurrehmandev-studious-chainsaw/server</a> pcapDissector.ts</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">18.18% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>4/22</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/20</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>0/10</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">21.05% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>4/19</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line low'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a>
+<a name='L77'></a><a href='#L77'>77</a>
+<a name='L78'></a><a href='#L78'>78</a>
+<a name='L79'></a><a href='#L79'>79</a>
+<a name='L80'></a><a href='#L80'>80</a>
+<a name='L81'></a><a href='#L81'>81</a>
+<a name='L82'></a><a href='#L82'>82</a>
+<a name='L83'></a><a href='#L83'>83</a>
+<a name='L84'></a><a href='#L84'>84</a>
+<a name='L85'></a><a href='#L85'>85</a>
+<a name='L86'></a><a href='#L86'>86</a>
+<a name='L87'></a><a href='#L87'>87</a>
+<a name='L88'></a><a href='#L88'>88</a>
+<a name='L89'></a><a href='#L89'>89</a>
+<a name='L90'></a><a href='#L90'>90</a>
+<a name='L91'></a><a href='#L91'>91</a>
+<a name='L92'></a><a href='#L92'>92</a>
+<a name='L93'></a><a href='#L93'>93</a>
+<a name='L94'></a><a href='#L94'>94</a>
+<a name='L95'></a><a href='#L95'>95</a>
+<a name='L96'></a><a href='#L96'>96</a>
+<a name='L97'></a><a href='#L97'>97</a>
+<a name='L98'></a><a href='#L98'>98</a>
+<a name='L99'></a><a href='#L99'>99</a>
+<a name='L100'></a><a href='#L100'>100</a>
+<a name='L101'></a><a href='#L101'>101</a>
+<a name='L102'></a><a href='#L102'>102</a>
+<a name='L103'></a><a href='#L103'>103</a>
+<a name='L104'></a><a href='#L104'>104</a>
+<a name='L105'></a><a href='#L105'>105</a>
+<a name='L106'></a><a href='#L106'>106</a>
+<a name='L107'></a><a href='#L107'>107</a>
+<a name='L108'></a><a href='#L108'>108</a>
+<a name='L109'></a><a href='#L109'>109</a>
+<a name='L110'></a><a href='#L110'>110</a>
+<a name='L111'></a><a href='#L111'>111</a>
+<a name='L112'></a><a href='#L112'>112</a>
+<a name='L113'></a><a href='#L113'>113</a>
+<a name='L114'></a><a href='#L114'>114</a>
+<a name='L115'></a><a href='#L115'>115</a>
+<a name='L116'></a><a href='#L116'>116</a>
+<a name='L117'></a><a href='#L117'>117</a>
+<a name='L118'></a><a href='#L118'>118</a>
+<a name='L119'></a><a href='#L119'>119</a>
+<a name='L120'></a><a href='#L120'>120</a>
+<a name='L121'></a><a href='#L121'>121</a>
+<a name='L122'></a><a href='#L122'>122</a>
+<a name='L123'></a><a href='#L123'>123</a>
+<a name='L124'></a><a href='#L124'>124</a>
+<a name='L125'></a><a href='#L125'>125</a>
+<a name='L126'></a><a href='#L126'>126</a>
+<a name='L127'></a><a href='#L127'>127</a>
+<a name='L128'></a><a href='#L128'>128</a>
+<a name='L129'></a><a href='#L129'>129</a>
+<a name='L130'></a><a href='#L130'>130</a>
+<a name='L131'></a><a href='#L131'>131</a>
+<a name='L132'></a><a href='#L132'>132</a>
+<a name='L133'></a><a href='#L133'>133</a>
+<a name='L134'></a><a href='#L134'>134</a>
+<a name='L135'></a><a href='#L135'>135</a>
+<a name='L136'></a><a href='#L136'>136</a>
+<a name='L137'></a><a href='#L137'>137</a>
+<a name='L138'></a><a href='#L138'>138</a>
+<a name='L139'></a><a href='#L139'>139</a>
+<a name='L140'></a><a href='#L140'>140</a>
+<a name='L141'></a><a href='#L141'>141</a>
+<a name='L142'></a><a href='#L142'>142</a>
+<a name='L143'></a><a href='#L143'>143</a>
+<a name='L144'></a><a href='#L144'>144</a>
+<a name='L145'></a><a href='#L145'>145</a>
+<a name='L146'></a><a href='#L146'>146</a>
+<a name='L147'></a><a href='#L147'>147</a>
+<a name='L148'></a><a href='#L148'>148</a>
+<a name='L149'></a><a href='#L149'>149</a>
+<a name='L150'></a><a href='#L150'>150</a>
+<a name='L151'></a><a href='#L151'>151</a>
+<a name='L152'></a><a href='#L152'>152</a>
+<a name='L153'></a><a href='#L153'>153</a>
+<a name='L154'></a><a href='#L154'>154</a>
+<a name='L155'></a><a href='#L155'>155</a>
+<a name='L156'></a><a href='#L156'>156</a>
+<a name='L157'></a><a href='#L157'>157</a>
+<a name='L158'></a><a href='#L158'>158</a>
+<a name='L159'></a><a href='#L159'>159</a>
+<a name='L160'></a><a href='#L160'>160</a>
+<a name='L161'></a><a href='#L161'>161</a>
+<a name='L162'></a><a href='#L162'>162</a>
+<a name='L163'></a><a href='#L163'>163</a>
+<a name='L164'></a><a href='#L164'>164</a>
+<a name='L165'></a><a href='#L165'>165</a>
+<a name='L166'></a><a href='#L166'>166</a>
+<a name='L167'></a><a href='#L167'>167</a>
+<a name='L168'></a><a href='#L168'>168</a>
+<a name='L169'></a><a href='#L169'>169</a>
+<a name='L170'></a><a href='#L170'>170</a>
+<a name='L171'></a><a href='#L171'>171</a>
+<a name='L172'></a><a href='#L172'>172</a>
+<a name='L173'></a><a href='#L173'>173</a>
+<a name='L174'></a><a href='#L174'>174</a>
+<a name='L175'></a><a href='#L175'>175</a>
+<a name='L176'></a><a href='#L176'>176</a>
+<a name='L177'></a><a href='#L177'>177</a>
+<a name='L178'></a><a href='#L178'>178</a>
+<a name='L179'></a><a href='#L179'>179</a>
+<a name='L180'></a><a href='#L180'>180</a>
+<a name='L181'></a><a href='#L181'>181</a>
+<a name='L182'></a><a href='#L182'>182</a>
+<a name='L183'></a><a href='#L183'>183</a>
+<a name='L184'></a><a href='#L184'>184</a>
+<a name='L185'></a><a href='#L185'>185</a>
+<a name='L186'></a><a href='#L186'>186</a>
+<a name='L187'></a><a href='#L187'>187</a>
+<a name='L188'></a><a href='#L188'>188</a>
+<a name='L189'></a><a href='#L189'>189</a>
+<a name='L190'></a><a href='#L190'>190</a>
+<a name='L191'></a><a href='#L191'>191</a>
+<a name='L192'></a><a href='#L192'>192</a>
+<a name='L193'></a><a href='#L193'>193</a>
+<a name='L194'></a><a href='#L194'>194</a>
+<a name='L195'></a><a href='#L195'>195</a>
+<a name='L196'></a><a href='#L196'>196</a>
+<a name='L197'></a><a href='#L197'>197</a>
+<a name='L198'></a><a href='#L198'>198</a>
+<a name='L199'></a><a href='#L199'>199</a>
+<a name='L200'></a><a href='#L200'>200</a>
+<a name='L201'></a><a href='#L201'>201</a>
+<a name='L202'></a><a href='#L202'>202</a>
+<a name='L203'></a><a href='#L203'>203</a>
+<a name='L204'></a><a href='#L204'>204</a>
+<a name='L205'></a><a href='#L205'>205</a>
+<a name='L206'></a><a href='#L206'>206</a>
+<a name='L207'></a><a href='#L207'>207</a>
+<a name='L208'></a><a href='#L208'>208</a>
+<a name='L209'></a><a href='#L209'>209</a>
+<a name='L210'></a><a href='#L210'>210</a>
+<a name='L211'></a><a href='#L211'>211</a>
+<a name='L212'></a><a href='#L212'>212</a>
+<a name='L213'></a><a href='#L213'>213</a>
+<a name='L214'></a><a href='#L214'>214</a>
+<a name='L215'></a><a href='#L215'>215</a>
+<a name='L216'></a><a href='#L216'>216</a>
+<a name='L217'></a><a href='#L217'>217</a>
+<a name='L218'></a><a href='#L218'>218</a>
+<a name='L219'></a><a href='#L219'>219</a>
+<a name='L220'></a><a href='#L220'>220</a>
+<a name='L221'></a><a href='#L221'>221</a>
+<a name='L222'></a><a href='#L222'>222</a>
+<a name='L223'></a><a href='#L223'>223</a>
+<a name='L224'></a><a href='#L224'>224</a>
+<a name='L225'></a><a href='#L225'>225</a>
+<a name='L226'></a><a href='#L226'>226</a>
+<a name='L227'></a><a href='#L227'>227</a>
+<a name='L228'></a><a href='#L228'>228</a>
+<a name='L229'></a><a href='#L229'>229</a>
+<a name='L230'></a><a href='#L230'>230</a>
+<a name='L231'></a><a href='#L231'>231</a>
+<a name='L232'></a><a href='#L232'>232</a>
+<a name='L233'></a><a href='#L233'>233</a>
+<a name='L234'></a><a href='#L234'>234</a>
+<a name='L235'></a><a href='#L235'>235</a>
+<a name='L236'></a><a href='#L236'>236</a>
+<a name='L237'></a><a href='#L237'>237</a>
+<a name='L238'></a><a href='#L238'>238</a>
+<a name='L239'></a><a href='#L239'>239</a>
+<a name='L240'></a><a href='#L240'>240</a>
+<a name='L241'></a><a href='#L241'>241</a>
+<a name='L242'></a><a href='#L242'>242</a>
+<a name='L243'></a><a href='#L243'>243</a>
+<a name='L244'></a><a href='#L244'>244</a>
+<a name='L245'></a><a href='#L245'>245</a>
+<a name='L246'></a><a href='#L246'>246</a>
+<a name='L247'></a><a href='#L247'>247</a>
+<a name='L248'></a><a href='#L248'>248</a>
+<a name='L249'></a><a href='#L249'>249</a>
+<a name='L250'></a><a href='#L250'>250</a>
+<a name='L251'></a><a href='#L251'>251</a>
+<a name='L252'></a><a href='#L252'>252</a>
+<a name='L253'></a><a href='#L253'>253</a>
+<a name='L254'></a><a href='#L254'>254</a>
+<a name='L255'></a><a href='#L255'>255</a>
+<a name='L256'></a><a href='#L256'>256</a>
+<a name='L257'></a><a href='#L257'>257</a>
+<a name='L258'></a><a href='#L258'>258</a>
+<a name='L259'></a><a href='#L259'>259</a>
+<a name='L260'></a><a href='#L260'>260</a>
+<a name='L261'></a><a href='#L261'>261</a>
+<a name='L262'></a><a href='#L262'>262</a>
+<a name='L263'></a><a href='#L263'>263</a>
+<a name='L264'></a><a href='#L264'>264</a>
+<a name='L265'></a><a href='#L265'>265</a>
+<a name='L266'></a><a href='#L266'>266</a>
+<a name='L267'></a><a href='#L267'>267</a>
+<a name='L268'></a><a href='#L268'>268</a>
+<a name='L269'></a><a href='#L269'>269</a>
+<a name='L270'></a><a href='#L270'>270</a>
+<a name='L271'></a><a href='#L271'>271</a>
+<a name='L272'></a><a href='#L272'>272</a>
+<a name='L273'></a><a href='#L273'>273</a>
+<a name='L274'></a><a href='#L274'>274</a>
+<a name='L275'></a><a href='#L275'>275</a>
+<a name='L276'></a><a href='#L276'>276</a>
+<a name='L277'></a><a href='#L277'>277</a>
+<a name='L278'></a><a href='#L278'>278</a>
+<a name='L279'></a><a href='#L279'>279</a>
+<a name='L280'></a><a href='#L280'>280</a>
+<a name='L281'></a><a href='#L281'>281</a>
+<a name='L282'></a><a href='#L282'>282</a>
+<a name='L283'></a><a href='#L283'>283</a>
+<a name='L284'></a><a href='#L284'>284</a>
+<a name='L285'></a><a href='#L285'>285</a>
+<a name='L286'></a><a href='#L286'>286</a>
+<a name='L287'></a><a href='#L287'>287</a>
+<a name='L288'></a><a href='#L288'>288</a>
+<a name='L289'></a><a href='#L289'>289</a>
+<a name='L290'></a><a href='#L290'>290</a>
+<a name='L291'></a><a href='#L291'>291</a>
+<a name='L292'></a><a href='#L292'>292</a>
+<a name='L293'></a><a href='#L293'>293</a>
+<a name='L294'></a><a href='#L294'>294</a>
+<a name='L295'></a><a href='#L295'>295</a>
+<a name='L296'></a><a href='#L296'>296</a>
+<a name='L297'></a><a href='#L297'>297</a>
+<a name='L298'></a><a href='#L298'>298</a>
+<a name='L299'></a><a href='#L299'>299</a>
+<a name='L300'></a><a href='#L300'>300</a>
+<a name='L301'></a><a href='#L301'>301</a>
+<a name='L302'></a><a href='#L302'>302</a>
+<a name='L303'></a><a href='#L303'>303</a>
+<a name='L304'></a><a href='#L304'>304</a>
+<a name='L305'></a><a href='#L305'>305</a>
+<a name='L306'></a><a href='#L306'>306</a>
+<a name='L307'></a><a href='#L307'>307</a>
+<a name='L308'></a><a href='#L308'>308</a>
+<a name='L309'></a><a href='#L309'>309</a>
+<a name='L310'></a><a href='#L310'>310</a>
+<a name='L311'></a><a href='#L311'>311</a>
+<a name='L312'></a><a href='#L312'>312</a>
+<a name='L313'></a><a href='#L313'>313</a>
+<a name='L314'></a><a href='#L314'>314</a>
+<a name='L315'></a><a href='#L315'>315</a>
+<a name='L316'></a><a href='#L316'>316</a>
+<a name='L317'></a><a href='#L317'>317</a>
+<a name='L318'></a><a href='#L318'>318</a>
+<a name='L319'></a><a href='#L319'>319</a>
+<a name='L320'></a><a href='#L320'>320</a>
+<a name='L321'></a><a href='#L321'>321</a>
+<a name='L322'></a><a href='#L322'>322</a>
+<a name='L323'></a><a href='#L323'>323</a>
+<a name='L324'></a><a href='#L324'>324</a>
+<a name='L325'></a><a href='#L325'>325</a>
+<a name='L326'></a><a href='#L326'>326</a>
+<a name='L327'></a><a href='#L327'>327</a>
+<a name='L328'></a><a href='#L328'>328</a>
+<a name='L329'></a><a href='#L329'>329</a>
+<a name='L330'></a><a href='#L330'>330</a>
+<a name='L331'></a><a href='#L331'>331</a>
+<a name='L332'></a><a href='#L332'>332</a>
+<a name='L333'></a><a href='#L333'>333</a>
+<a name='L334'></a><a href='#L334'>334</a>
+<a name='L335'></a><a href='#L335'>335</a>
+<a name='L336'></a><a href='#L336'>336</a>
+<a name='L337'></a><a href='#L337'>337</a>
+<a name='L338'></a><a href='#L338'>338</a>
+<a name='L339'></a><a href='#L339'>339</a>
+<a name='L340'></a><a href='#L340'>340</a>
+<a name='L341'></a><a href='#L341'>341</a>
+<a name='L342'></a><a href='#L342'>342</a>
+<a name='L343'></a><a href='#L343'>343</a>
+<a name='L344'></a><a href='#L344'>344</a>
+<a name='L345'></a><a href='#L345'>345</a>
+<a name='L346'></a><a href='#L346'>346</a>
+<a name='L347'></a><a href='#L347'>347</a>
+<a name='L348'></a><a href='#L348'>348</a>
+<a name='L349'></a><a href='#L349'>349</a>
+<a name='L350'></a><a href='#L350'>350</a>
+<a name='L351'></a><a href='#L351'>351</a>
+<a name='L352'></a><a href='#L352'>352</a>
+<a name='L353'></a><a href='#L353'>353</a>
+<a name='L354'></a><a href='#L354'>354</a>
+<a name='L355'></a><a href='#L355'>355</a>
+<a name='L356'></a><a href='#L356'>356</a>
+<a name='L357'></a><a href='#L357'>357</a>
+<a name='L358'></a><a href='#L358'>358</a>
+<a name='L359'></a><a href='#L359'>359</a>
+<a name='L360'></a><a href='#L360'>360</a>
+<a name='L361'></a><a href='#L361'>361</a>
+<a name='L362'></a><a href='#L362'>362</a>
+<a name='L363'></a><a href='#L363'>363</a>
+<a name='L364'></a><a href='#L364'>364</a>
+<a name='L365'></a><a href='#L365'>365</a>
+<a name='L366'></a><a href='#L366'>366</a>
+<a name='L367'></a><a href='#L367'>367</a>
+<a name='L368'></a><a href='#L368'>368</a>
+<a name='L369'></a><a href='#L369'>369</a>
+<a name='L370'></a><a href='#L370'>370</a>
+<a name='L371'></a><a href='#L371'>371</a>
+<a name='L372'></a><a href='#L372'>372</a>
+<a name='L373'></a><a href='#L373'>373</a>
+<a name='L374'></a><a href='#L374'>374</a>
+<a name='L375'></a><a href='#L375'>375</a>
+<a name='L376'></a><a href='#L376'>376</a>
+<a name='L377'></a><a href='#L377'>377</a>
+<a name='L378'></a><a href='#L378'>378</a>
+<a name='L379'></a><a href='#L379'>379</a>
+<a name='L380'></a><a href='#L380'>380</a>
+<a name='L381'></a><a href='#L381'>381</a>
+<a name='L382'></a><a href='#L382'>382</a>
+<a name='L383'></a><a href='#L383'>383</a>
+<a name='L384'></a><a href='#L384'>384</a>
+<a name='L385'></a><a href='#L385'>385</a>
+<a name='L386'></a><a href='#L386'>386</a>
+<a name='L387'></a><a href='#L387'>387</a>
+<a name='L388'></a><a href='#L388'>388</a>
+<a name='L389'></a><a href='#L389'>389</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { PCAPDissectionResult, PCAPPacket, PCAPSessionFlow } from "../src/types";
+&nbsp;
+// Standard Sample PCAP Dataset Library
+const SAMPLE_PCAPS: Record&lt;string, PCAPDissectionResult&gt; = {
+  "apt29-cobalt-strike-c2.pcap": {
+    pcap_name: "apt29-cobalt-strike-c2.pcap",
+    capture_time: "2026-08-27T02:14:22Z",
+    total_packets: 48,
+    total_bytes: 38412,
+    duration_seconds: 12.4,
+    anomalous_packets_count: 14,
+    detected_threats: [
+      "Cobalt Strike Malleable HTTPS Beaconing (JA3: a0e9f5d64fd4e732dcd34b771e26fda1)",
+      "Anomalous User-Agent: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko",
+      "Periodic Jitter Beacon (Interval: 4.8s ± 0.3s)",
+      "High Entropy Encrypted TLS Payload (Entropy: 7.89/8.0)",
+    ],
+    dpi_summary: {
+      tls_sessions: 4,
+      dns_tunnels_flagged: 0,
+      cleartext_credentials: 0,
+      suspicious_ja3_hashes: ["a0e9f5d64fd4e732dcd34b771e26fda1", "6734f37431670b3ab4292b8f60f29984"],
+    },
+    flows: [
+      {
+        flow_id: "FLOW-01",
+        source_endpoint: "10.0.1.25:49812",
+        dest_endpoint: "198.51.100.42:443",
+        protocol: "TCP/TLSv1.3",
+        packet_count: 24,
+        byte_count: 19420,
+        start_time: "02:14:22.100",
+        duration_ms: 4820,
+        anomaly_flag: "Cobalt Strike C2 Beacon",
+        ja3_fingerprint: "a0e9f5d64fd4e732dcd34b771e26fda1",
+        app_layer_proto: "HTTPS / Malleable C2",
+      },
+      {
+        flow_id: "FLOW-02",
+        source_endpoint: "10.0.1.25:53011",
+        dest_endpoint: "10.0.0.2:53",
+        protocol: "UDP/DNS",
+        packet_count: 8,
+        byte_count: 1480,
+        start_time: "02:14:22.050",
+        duration_ms: 120,
+        anomaly_flag: "C2 Domain Resolution",
+        app_layer_proto: "DNS Query (cdn-update-auth.com)",
+      },
+      {
+        flow_id: "FLOW-03",
+        source_endpoint: "10.0.1.25:49814",
+        dest_endpoint: "198.51.100.42:443",
+        protocol: "TCP/TLSv1.3",
+        packet_count: 16,
+        byte_count: 17512,
+        start_time: "02:14:27.200",
+        duration_ms: 5120,
+        anomaly_flag: "C2 Secondary Beacon &amp; Tasking",
+        ja3_fingerprint: "a0e9f5d64fd4e732dcd34b771e26fda1",
+        app_layer_proto: "HTTPS / Encrypted Tasking",
+      },
+    ],
+    packets: [
+      {
+        frame_number: 1,
+        timestamp: "2026-08-27T02:14:22.050Z",
+        time_relative_s: 0.0,
+        source_mac: "00:1a:2b:3c:4d:5e",
+        dest_mac: "00:50:56:c0:00:08",
+        source_ip: "10.0.1.25",
+        dest_ip: "10.0.0.2",
+        source_port: 53011,
+        dest_port: 53,
+        protocol: "DNS",
+        length_bytes: 84,
+        info: "Standard query 0x3f12 A cdn-update-auth.com",
+        is_anomalous: true,
+        dpi_findings: {
+          dns_query_name: "cdn-update-auth.com",
+          dns_query_type: "A",
+          dns_entropy: 3.42,
+        },
+        payload_preview: "3f 12 01 00 00 01 00 00 00 00 00 00 0f 63 64 6e 2d 75 70 64 61 74 65 2d 61 75 74 68 03 63 6f 6d 00 00 01 00 01",
+        hex_dump: "0000  00 50 56 c0 00 08 00 1a 2b 3c 4d 5e 08 00 45 00  .PV.....+&lt;M^..E.\n0010  00 46 1c 2a 40 00 40 11 b8 21 0a 00 01 19 0a 00  .F.*@.@..!......\n0020  00 02 cf 13 00 35 00 32 8b 19 3f 12 01 00 00 01  .....5.2..?.....\n0030  00 00 00 00 00 00 0f 63 64 6e 2d 75 70 64 61 74  .......cdn-updat\n0040  65 2d 61 75 74 68 03 63 6f 6d 00 00 01 00 01     e-auth.com.....",
+      },
+      {
+        frame_number: 2,
+        timestamp: "2026-08-27T02:14:22.095Z",
+        time_relative_s: 0.045,
+        source_mac: "00:50:56:c0:00:08",
+        dest_mac: "00:1a:2b:3c:4d:5e",
+        source_ip: "10.0.0.2",
+        dest_ip: "10.0.1.25",
+        source_port: 53,
+        dest_port: 53011,
+        protocol: "DNS",
+        length_bytes: 100,
+        info: "Standard query response 0x3f12 A cdn-update-auth.com A 198.51.100.42",
+        is_anomalous: false,
+        payload_preview: "3f 12 81 80 00 01 00 01 00 00 00 00 0f 63 64 6e ... c6 33 64 2a",
+        hex_dump: "0000  00 1a 2b 3c 4d 5e 00 50 56 c0 00 08 08 00 45 00  ..+&lt;M^.PV.....E.\n0010  00 56 3a 11 00 00 40 11 9a 38 0a 00 00 02 0a 00  .V:...@..8......\n0020  01 19 00 35 cf 13 00 42 12 a1 3f 12 81 80 00 01  ...5...B..?.....\n0030  00 01 00 00 00 00 0f 63 64 6e 2d 75 70 64 61 74  .......cdn-updat\n0040  65 2d 61 75 74 68 03 63 6f 6d 00 00 01 00 01 c0  e-auth.com......\n0050  0c 00 01 00 01 00 00 01 2c 00 04 c6 33 64 2a     ........,...3d*",
+      },
+      {
+        frame_number: 3,
+        timestamp: "2026-08-27T02:14:22.100Z",
+        time_relative_s: 0.05,
+        source_mac: "00:1a:2b:3c:4d:5e",
+        dest_mac: "00:50:56:c0:00:08",
+        source_ip: "10.0.1.25",
+        dest_ip: "198.51.100.42",
+        source_port: 49812,
+        dest_port: 443,
+        protocol: "TCP",
+        length_bytes: 74,
+        info: "49812 → 443 [SYN] Seq=0 Win=64240 Len=0 MSS=1460 WS=256 SACK_PERM",
+        flags: ["SYN"],
+        is_anomalous: false,
+        hex_dump: "0000  00 50 56 c0 00 08 00 1a 2b 3c 4d 5e 08 00 45 00  .PV.....+&lt;M^..E.\n0010  00 3c 4a 12 40 00 40 06 8a 45 0a 00 01 19 c6 33  .&lt;J.@.@..E.....3\n0020  64 2a c2 94 01 bb 91 23 84 a1 00 00 00 00 a0 02  d*.....#........",
+      },
+      {
+        frame_number: 4,
+        timestamp: "2026-08-27T02:14:22.140Z",
+        time_relative_s: 0.09,
+        source_mac: "00:1a:2b:3c:4d:5e",
+        dest_mac: "00:50:56:c0:00:08",
+        source_ip: "10.0.1.25",
+        dest_ip: "198.51.100.42",
+        source_port: 49812,
+        dest_port: 443,
+        protocol: "TLSv1.3",
+        length_bytes: 517,
+        info: "Client Hello (SNI: cdn-update-auth.com, JA3: a0e9f5d64fd4e732dcd34b771e26fda1)",
+        is_anomalous: true,
+        dpi_findings: {
+          ja3_hash: "a0e9f5d64fd4e732dcd34b771e26fda1",
+          ja4_hash: "t13d1516h2_8daaf6152771_b5e52e428c9b",
+          sni_server_name: "cdn-update-auth.com",
+          entropy_score: 7.92,
+        },
+        payload_preview: "16 03 01 01 fc 01 00 01 f8 03 03 8f 12 7b 94 11 8a 44 c2 ... 00 00 12 63 64 6e 2d 75 70 64 61 74 65 2d 61 75 74 68 2e 63 6f 6d",
+        hex_dump: "0000  00 50 56 c0 00 08 00 1a 2b 3c 4d 5e 08 00 45 00  .PV.....+&lt;M^..E.\n0010  02 05 4a 14 40 00 40 06 88 7a 0a 00 01 19 c6 33  ..J.@.@..z.....3\n0020  64 2a c2 94 01 bb 91 23 84 a2 4a 88 12 34 80 18  d*.....#..J..4..\n0030  01 f5 b4 19 00 00 01 01 08 0a 00 12 9a 41 00 00  .............A..\n0040  16 03 01 01 fc 01 00 01 f8 03 03 8f 12 7b 94 11  .............{..\n0050  8a 44 c2 31 99 0a 12 ff aa 41 12 88 41 00 12 aa  .D.1.....A..A...\n0060  00 20 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e  . ABCDEFGHIJKLMN\n0070  4f 50 51 52 53 54 55 56 57 58 59 5a 30 31 32 33  OPQRSTUVWXYZ0123\n0080  00 00 12 63 64 6e 2d 75 70 64 61 74 65 2d 61 75  ...cdn-update-au\n0090  74 68 2e 63 6f 6d 00 0b 00 04 03 00 01 02 00 0a  th.com..........",
+      },
+      {
+        frame_number: 5,
+        timestamp: "2026-08-27T02:14:22.210Z",
+        time_relative_s: 0.16,
+        source_mac: "00:50:56:c0:00:08",
+        dest_mac: "00:1a:2b:3c:4d:5e",
+        source_ip: "198.51.100.42",
+        dest_ip: "10.0.1.25",
+        source_port: 443,
+        dest_port: 49812,
+        protocol: "TLSv1.3",
+        length_bytes: 1440,
+        info: "Server Hello, Change Cipher Spec, Encrypted Extensions, Certificate, Finished",
+        is_anomalous: false,
+        payload_preview: "16 03 03 00 7a 02 00 00 76 03 03 5a 8b ... 14 03 03 00 01 01 17 03 03",
+        hex_dump: "0000  00 1a 2b 3c 4d 5e 00 50 56 c0 00 08 08 00 45 00  ..+&lt;M^.PV.....E.\n0010  05 a0 3a 14 00 00 40 06 97 f2 c6 33 64 2a 0a 00  ..:...@....3d*..\n0020  01 19 01 bb c2 94 4a 88 12 34 91 23 86 a0 80 18  ......J..4.#....\n0030  01 f5 3c a4 00 00 01 01 08 0a 00 00 12 9a 00 12  ..&lt;.............\n0040  16 03 03 00 7a 02 00 00 76 03 03 5a 8b 12 44 91  ....z...v..Z..D.",
+      },
+      {
+        frame_number: 6,
+        timestamp: "2026-08-27T02:14:22.280Z",
+        time_relative_s: 0.23,
+        source_mac: "00:1a:2b:3c:4d:5e",
+        dest_mac: "00:50:56:c0:00:08",
+        source_ip: "10.0.1.25",
+        dest_ip: "198.51.100.42",
+        source_port: 49812,
+        dest_port: 443,
+        protocol: "HTTP/1.1",
+        length_bytes: 842,
+        info: "POST /submit.php HTTP/1.1 (Cobalt Strike Malleable Header match: Cookie: __cfduid=...)",
+        is_anomalous: true,
+        dpi_findings: {
+          http_method: "POST",
+          http_uri: "/submit.php?id=91283",
+          http_user_agent: "Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko",
+          cobalt_strike_watermark: "CS-MALL-WATERMARK-849201",
+          entropy_score: 7.84,
+        },
+        payload_preview: "POST /submit.php?id=91283 HTTP/1.1\r\nHost: cdn-update-auth.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko\r\nCookie: session_token=e30KIC... (Base64 C2 Payload)",
+        hex_dump: "0000  50 4f 53 54 20 2f 73 75 62 6d 69 74 2e 70 68 70  POST /submit.php\n0010  3f 69 64 3d 39 31 32 38 33 20 48 54 54 50 2f 31  ?id=91283 HTTP/1\n0020  2e 31 0d 0a 48 6f 73 74 3a 20 63 64 6e 2d 75 70  .1..Host: cdn-up\n0030  64 61 74 65 2d 61 75 74 68 2e 63 6f 6d 0d 0a 55  date-auth.com..U\n0040  73 65 72 2d 41 67 65 6e 74 3a 20 4d 6f 7a 69 6c  ser-Agent: Mozil\n0050  6c 61 2f 35 2e 30 20 28 57 69 6e 64 6f 77 73 20  la/5.0 (Windows \n0060  4e 54 20 36 2e 31 3b 20 54 72 69 64 65 6e 74 2f  NT 6.1; Trident/\n0070  37 2e 30 3b 20 72 76 3a 31 31 2e 30 29 20 6c 69  7.0; rv:11.0) li\n0080  6b 65 20 47 65 63 6b 6f 0d 0a 43 6f 6e 74 65 6e  ke Gecko..Conten",
+      },
+    ],
+  },
+  "dns-tunneling-data-exfil.pcap": {
+    pcap_name: "dns-tunneling-data-exfil.pcap",
+    capture_time: "2026-08-27T01:50:10Z",
+    total_packets: 32,
+    total_bytes: 14200,
+    duration_seconds: 8.2,
+    anomalous_packets_count: 22,
+    detected_threats: [
+      "DNS Tunneling Subdomain High-Entropy Data Exfiltration (Iodine / dnscat2)",
+      "Anomalous Query Length (Average Subdomain: 58 characters)",
+      "High Volume of TXT and Null Record Query Responses",
+    ],
+    dpi_summary: {
+      tls_sessions: 0,
+      dns_tunnels_flagged: 18,
+      cleartext_credentials: 0,
+      suspicious_ja3_hashes: [],
+    },
+    flows: [
+      {
+        flow_id: "FLOW-DNS-01",
+        source_endpoint: "10.0.2.80:54120",
+        dest_endpoint: "10.0.0.2:53",
+        protocol: "UDP/DNS",
+        packet_count: 32,
+        byte_count: 14200,
+        start_time: "01:50:10.000",
+        duration_ms: 8200,
+        anomaly_flag: "DNS Exfiltration Tunnel",
+        app_layer_proto: "DNS TXT Exfiltration",
+      },
+    ],
+    packets: [
+      {
+        frame_number: 1,
+        timestamp: "2026-08-27T01:50:10.100Z",
+        time_relative_s: 0.0,
+        source_mac: "00:11:22:33:44:55",
+        dest_mac: "00:50:56:c0:00:08",
+        source_ip: "10.0.2.80",
+        dest_ip: "10.0.0.2",
+        source_port: 54120,
+        dest_port: 53,
+        protocol: "DNS",
+        length_bytes: 142,
+        info: "Standard query 0x1101 TXT aHR0cHM6Ly9jb25maWd1cmF0aW9uLmRhdGE=.tunnel.exfil-c2.net",
+        is_anomalous: true,
+        dpi_findings: {
+          dns_query_name: "aHR0cHM6Ly9jb25maWd1cmF0aW9uLmRhdGE=.tunnel.exfil-c2.net",
+          dns_query_type: "TXT",
+          dns_entropy: 4.88,
+        },
+        payload_preview: "11 01 01 00 00 01 00 00 00 00 00 00 24 61 48 52 30 63 48 4d 36 4c 79 39 6a 62 32 35 6d 61 57 64 31 ...",
+        hex_dump: "0000  00 50 56 c0 00 08 00 11 22 33 44 55 08 00 45 00  .PV.....\"3DU..E.\n0010  00 80 2b 10 40 00 40 11 b7 ea 0a 00 02 50 0a 00  ..+.@.@......P..\n0020  00 02 d3 68 00 35 00 6c e1 22 11 01 01 00 00 01  ...h.5.l.\"......\n0030  00 00 00 00 00 00 24 61 48 52 30 63 48 4d 36 4c  ......$aHR0cHM6L\n0040  79 39 6a 62 32 35 6d 61 57 64 31 63 6d 46 30 61  y9jb25maWd1cmF0a\n0050  57 39 75 4c 6d 52 68 64 47 45 3d 06 74 75 6e 6e  W9uLmRhdGE=.tunn\n0060  65 6c 08 65 78 66 69 6c 2d 63 32 03 6e 65 74 00  el.exfil-c2.net.",
+      },
+    ],
+  },
+  "kerberoasting-tgs-req.pcap": {
+    pcap_name: "kerberoasting-tgs-req.pcap",
+    capture_time: "2026-08-27T03:02:44Z",
+    total_packets: 20,
+    total_bytes: 18920,
+    duration_seconds: 4.1,
+    anomalous_packets_count: 8,
+    detected_threats: [
+      "Kerberos TGS-REQ Anomalous RC4-HMAC Cipher (etype: 0x17)",
+      "Multiple SPN Enumeration Ticket Extraction (MSSQLSvc / HTTP Service SPNs)",
+    ],
+    dpi_summary: {
+      tls_sessions: 0,
+      dns_tunnels_flagged: 0,
+      cleartext_credentials: 0,
+      suspicious_ja3_hashes: [],
+    },
+    flows: [
+      {
+        flow_id: "FLOW-KERB-01",
+        source_endpoint: "10.0.1.18:50291",
+        dest_endpoint: "10.0.0.10:88",
+        protocol: "TCP/Kerberos",
+        packet_count: 20,
+        byte_count: 18920,
+        start_time: "03:02:44.100",
+        duration_ms: 4100,
+        anomaly_flag: "RC4 Kerberoasting Probe",
+        app_layer_proto: "Kerberos v5 / TGS-REQ",
+      },
+    ],
+    packets: [
+      {
+        frame_number: 1,
+        timestamp: "2026-08-27T03:02:44.110Z",
+        time_relative_s: 0.0,
+        source_mac: "00:1a:44:88:99:00",
+        dest_mac: "00:50:56:c0:00:08",
+        source_ip: "10.0.1.18",
+        dest_ip: "10.0.0.10",
+        source_port: 50291,
+        dest_port: 88,
+        protocol: "Kerberos",
+        length_bytes: 940,
+        info: "TGS-REQ (SPN: MSSQLSvc/db-prod-01.corp.internal:1433, etype: rc4-hmac [0x17])",
+        is_anomalous: true,
+        payload_preview: "6c 82 03 a8 30 82 03 a4 a1 03 02 01 05 a2 03 02 01 0c ... 4d 53 53 51 4c 53 76 63 2f 64 62 2d 70 72 6f 64 2d 30 31",
+        hex_dump: "0000  00 50 56 c0 00 08 00 1a 44 88 99 00 08 00 45 00  .PV.....D.....E.\n0010  03 ac 1a 22 40 00 40 06 87 11 0a 00 01 12 0a 00  ...\"@.@.........\n0020  00 0a c4 73 00 58 88 12 9a 41 12 41 80 18 01 f5  ...s.X...A.A....\n0030  6c 82 03 a8 30 82 03 a4 a1 03 02 01 05 a2 03 02  l...0...........\n0040  01 0c a3 82 03 94 30 82 03 90 a0 07 03 05 00 40  ......0........@\n0050  80 00 00 a1 2c 30 2a a0 03 02 01 02 a1 23 30 21  ....,0*......#0!\n0060  1b 08 4d 53 53 51 4c 53 76 63 1b 17 64 62 2d 70  ..MSSQLSvc..db-p\n0070  72 6f 64 2d 30 31 2e 63 6f 72 70 2e 6c 6f 63 61  rod-01.corp.loca",
+      },
+    ],
+  },
+};
+&nbsp;
+export function <span class="fstat-no" title="function not covered" >getSamplePcapList(</span>) {
+<span class="cstat-no" title="statement not covered" >  return Object.keys(SAMPLE_PCAPS).map(<span class="fstat-no" title="function not covered" >(k</span>) =&gt; (<span class="cstat-no" title="statement not covered" >{</span></span>
+    name: k,
+    total_packets: SAMPLE_PCAPS[k].total_packets,
+    detected_threats: SAMPLE_PCAPS[k].detected_threats,
+    duration_seconds: SAMPLE_PCAPS[k].duration_seconds,
+  }));
+}
+&nbsp;
+export function <span class="fstat-no" title="function not covered" >getPcapDissection(</span>pcapName: string): PCAPDissectionResult {
+<span class="cstat-no" title="statement not covered" >  <span class="missing-if-branch" title="if path not taken" >I</span>if (SAMPLE_PCAPS[pcapName]) {</span>
+<span class="cstat-no" title="statement not covered" >    return SAMPLE_PCAPS[pcapName];</span>
+  }
+<span class="cstat-no" title="statement not covered" >  return SAMPLE_PCAPS["apt29-cobalt-strike-c2.pcap"];</span>
+}
+&nbsp;
+export function <span class="fstat-no" title="function not covered" >parseCustomRawPcap(</span>filename: string, rawTextOrJson: string): PCAPDissectionResult {
+<span class="cstat-no" title="statement not covered" >  try {</span>
+    const parsed = <span class="cstat-no" title="statement not covered" >JSON.parse(rawTextOrJson);</span>
+<span class="cstat-no" title="statement not covered" >    <span class="missing-if-branch" title="if path not taken" >I</span>if (parsed.packets &amp;&amp; Array.isArray(parsed.packets)) {</span>
+<span class="cstat-no" title="statement not covered" >      return {</span>
+        pcap_name: filename,
+        capture_time: new Date().toISOString(),
+        total_packets: parsed.packets.length,
+        total_bytes: parsed.packets.reduce(<span class="fstat-no" title="function not covered" >(a</span>cc: number, p: any) =&gt; <span class="cstat-no" title="statement not covered" >acc + (p.length_bytes || 64),</span> 0),
+        duration_seconds: 15.0,
+        anomalous_packets_count: parsed.packets.filter(<span class="fstat-no" title="function not covered" >(p</span>: any) =&gt; <span class="cstat-no" title="statement not covered" >p.is_anomalous)</span>.length,
+        detected_threats: parsed.detected_threats || ["Custom Ingested Packet Capture Inspection"],
+        dpi_summary: parsed.dpi_summary || {
+          tls_sessions: 2,
+          dns_tunnels_flagged: 0,
+          cleartext_credentials: 0,
+          suspicious_ja3_hashes: [],
+        },
+        flows: parsed.flows || [],
+        packets: parsed.packets,
+      };
+    }
+  } catch (err) {
+    // Fallback if not pure JSON
+  }
+&nbsp;
+  // Generate synthetic parsed frames from raw string
+  const lines = <span class="cstat-no" title="statement not covered" >rawTextOrJson.split("\n").filter(<span class="fstat-no" title="function not covered" >(l</span>) =&gt; <span class="cstat-no" title="statement not covered" >l.trim().length &gt; 0)</span>;</span>
+  const packets: PCAPPacket[] = <span class="cstat-no" title="statement not covered" >lines.slice(0, 30).map(<span class="fstat-no" title="function not covered" >(l</span>ine, idx) =&gt; (<span class="cstat-no" title="statement not covered" >{</span></span>
+    frame_number: idx + 1,
+    timestamp: new Date(Date.now() - (30 - idx) * 1000).toISOString(),
+    time_relative_s: idx * 0.5,
+    source_mac: "00:50:56:a1:b2:c3",
+    dest_mac: "00:50:56:d4:e5:f6",
+    source_ip: "10.0.1.50",
+    dest_ip: "198.51.100.99",
+    source_port: 49152 + idx,
+    dest_port: 443,
+    protocol: idx % 3 === 0 ? "TLSv1.3" : idx % 3 === 1 ? "DNS" : "TCP",
+    length_bytes: 64 + (line.length % 500),
+    info: `Ingested Raw Frame #${idx + 1}: ${line.slice(0, 50)}`,
+    is_anomalous: idx % 2 === 0,
+    hex_dump: Buffer.from(line.slice(0, 64)).toString("hex").match(/.{1,2}/g)?.join(" ") || "00 01 02",
+  }));
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  return {</span>
+    pcap_name: filename || "uploaded_capture.pcap",
+    capture_time: new Date().toISOString(),
+    total_packets: packets.length,
+    total_bytes: packets.reduce(<span class="fstat-no" title="function not covered" >(a</span>cc, p) =&gt; <span class="cstat-no" title="statement not covered" >acc + p.length_bytes,</span> 0),
+    duration_seconds: 15.0,
+    anomalous_packets_count: packets.filter(<span class="fstat-no" title="function not covered" >(p</span>) =&gt; <span class="cstat-no" title="statement not covered" >p.is_anomalous)</span>.length,
+    detected_threats: ["Dynamic Ingest: High-Frequency Outbound Handshake Anomaly"],
+    dpi_summary: {
+      tls_sessions: 1,
+      dns_tunnels_flagged: 1,
+      cleartext_credentials: 0,
+      suspicious_ja3_hashes: ["a0e9f5d64fd4e732dcd34b771e26fda1"],
+    },
+    flows: [
+      {
+        flow_id: "FLOW-INGEST-01",
+        source_endpoint: "10.0.1.50:49152",
+        dest_endpoint: "198.51.100.99:443",
+        protocol: "TCP/TLS",
+        packet_count: packets.length,
+        byte_count: 12000,
+        start_time: "00:00:00.000",
+        duration_ms: 15000,
+        anomaly_flag: "Ingested Flow Inspection",
+        app_layer_proto: "Raw Ingestion",
+      },
+    ],
+    packets,
+  };
+}
+&nbsp;</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2026-08-28T17:07:54.254Z
+            </div>
+        <script src="../../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../../sorter.js"></script>
+        <script src="../../block-navigation.js"></script>
+    </body>
+</html>
+    
