@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  fusion-cell:
+    build: .
+    container_name: cyber-ew-fusion-cell
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production

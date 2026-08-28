@@ -2,7 +2,13 @@ import express from "express";
 import cors from "cors";
 import path from "path";
 import fs from "fs";
-import { createServer as createViteServer } from "vite";
+import { startFileWatcher } from "./server/ingestWorker";
+import { normalizeToAlert } from "./server/normalization";
+import { correlationEngine } from "./server/correlation";
+import { behaviorEngine } from "./server/behavior";
+import { scoringEngine } from "./server/scoring";
+import { outputEngine } from "./server/output";
+import { requireApiKey } from "./server/auth";
 
 const app = express();
 const PORT = 3000;
@@ -33,9 +39,23 @@ function readJsonFile<T>(filePath: string, fallback: T): T {
 function writeJsonFile(filePath: string, data: any) {
   try {
     ensureDir(path.dirname(filePath));
-    fs.writeFileSync(filePath, JSON.stringify(data, null, 2), "utf-8");
+    const tmp = filePath + ".tmp";
+    fs.writeFileSync(tmp, JSON.stringify(data, null, 2), "utf-8");
+    fs.renameSync(tmp, filePath);
   } catch (err) {
     console.error(`Error writing ${filePath}:`, err);
+  }
+}
+
+import { persistWriter } from './server/persistWriter';
+
+function appendJsonlAtomic(filePath: string, text: string) {
+  // Legacy wrapper kept for compatibility; delegate to persistWriter
+  try {
+    // pass only the JSON lines; persistWriter will manage file path and flushing
+    persistWriter.appendLines(text);
+  } catch (err) {
+    console.error(`Error delegating append to persistWriter:`, err);
   }
 }
 
@@ -752,6 +772,13 @@ app.post("/api/telemetry/generate", (req, res) => {
 
 // ----------------------------------------------------
 // 14. PHASE 6: LIVE INGESTION STREAM & HIGH-VOLUME CLUSTER ENGINE
+
+// Start file-based live ingest watcher (scans data/inputs/live every 2s)
+try {
+  startFileWatcher(DATA_DIR);
+} catch (e) {
+  console.warn("Failed to start ingest file watcher:", e);
+}
 // ----------------------------------------------------
 let streamInterval: any = null;
 let streamState = {
@@ -1033,12 +1060,16 @@ function executeStreamBatch(batchSize: number, scenarioId: string) {
         },
       };
 
-      alertsToAppend.push(JSON.stringify(alertObj));
+      const norm = normalizeToAlert(alertObj, 'generic');
+              try { behaviorEngine.addEvent(norm); } catch(e) {}
+              try { correlationEngine.addEvent(norm); norm._correlation_summary = correlationEngine.getCorrelatedSummary(norm); } catch (e) {}
+              try { scoringEngine.scoreAlert(norm); } catch(e) {}
+              alertsToAppend.push(JSON.stringify(norm));
     }
 
     if (alertsToAppend.length > 0) {
       try {
-        fs.appendFileSync(alertsPath, "\n" + alertsToAppend.join("\n"), "utf-8");
+              appendJsonlAtomic(alertsPath, "\n" + alertsToAppend.join("\n"));
       } catch (e) {
         console.error("Error writing live alert to alerts.jsonl:", e);
       }
@@ -1095,7 +1126,7 @@ app.post("/api/stream/adjust", (req, res) => {
 });
 
 // Bulk Log Ingestion (Suricata EVE, Zeek TSV, Syslog RFC 5424)
-app.post("/api/ingest/raw", (req, res) => {
+app.post("/api/ingest/raw", requireApiKey, (req, res) => {
   const { format, content, sensor_tag } = req.body;
   if (!content) {
     return res.status(400).json({ error: "Missing content" });
@@ -1113,25 +1144,11 @@ app.post("/api/ingest/raw", (req, res) => {
         const parsed = JSON.parse(line);
         parsedCount++;
         if (parsed.alert || parsed.event_type === "alert") {
-          alertsToAppend.push(JSON.stringify({
-            alert_id: `alt_eve_${Date.now()}_${parsedCount}`,
-            timestamp: parsed.timestamp || new Date().toISOString(),
-            event: {
-              event_id: `evt_eve_${parsedCount}`,
-              event_type: "suricata_alert",
-              source_ip: parsed.src_ip || "192.168.1.55",
-              destination_ip: parsed.dest_ip || "198.51.100.23",
-              severity: "high",
-              confidence: 0.9,
-              details: parsed,
-            },
-            threat_score: { score: 0.85, level: "High", confidence: 0.9, sources: ["suricata_eve"] },
-            threat_level: "High",
-            priority: "P2",
-            summary: parsed.alert?.signature || "Suricata IDS Detection Event",
-            recommended_actions: ["Investigate Source IP", "Review Suricata Rule"],
-            metadata: { source_system: "suricata_eve_importer" },
-          }));
+          const norm = normalizeToAlert(parsed, format);
+                    try { behaviorEngine.addEvent(norm); } catch(e) {}
+                    try { correlationEngine.addEvent(norm); norm._correlation_summary = correlationEngine.getCorrelatedSummary(norm); } catch(e) {}
+                    try { scoringEngine.scoreAlert(norm); } catch(e) {}
+                    alertsToAppend.push(JSON.stringify(norm));
         }
       }
     } else if (format === "zeek_tsv") {
@@ -1145,7 +1162,7 @@ app.post("/api/ingest/raw", (req, res) => {
     }
 
     if (alertsToAppend.length > 0) {
-      fs.appendFileSync(alertsPath, "\n" + alertsToAppend.join("\n"), "utf-8");
+      appendJsonlAtomic(alertsPath, "\n" + alertsToAppend.join("\n"));
     }
 
     res.json({
@@ -1892,15 +1909,162 @@ app.delete("/api/studio/campaigns/:id", (req, res) => {
   res.json({ status: success ? "deleted" : "not_found" });
 });
 
+// ============================================================================
+// OUTPUT ENGINE EXPORT ENDPOINTS
+// ============================================================================
 
+// Export alerts in requested format (CEF, STIX, CSV, JSONL, Syslog)
+app.get("/api/export/alerts", requireApiKey, (req, res) => {
+  const format = (req.query.format || "jsonl") as string;
+  const limit = parseInt(req.query.limit as string) || 100;
+  const threat_level = (req.query.threat_level as string) || null;
 
+  const alerts = readAlertsJsonl()
+    .filter((a) => !threat_level || a.threat_level === threat_level)
+    .slice(0, limit);
 
-// ----------------------------------------------------
+  if (!["jsonl", "cef", "stix", "csv", "syslog"].includes(format)) {
+    return res.status(400).json({ error: `Invalid format: ${format}` });
+  }
+
+  try {
+    const exported = outputEngine.exportBatch(alerts, format as any);
+    const contentType =
+      format === "csv"
+        ? "text/csv"
+        : format === "syslog"
+          ? "text/plain"
+          : "application/json";
+
+    res.setHeader("Content-Type", contentType);
+    res.setHeader(
+      "Content-Disposition",
+      `attachment; filename="alerts_${format}_${Date.now()}.${format === "csv" ? "csv" : format === "stix" ? "json" : format}"`
+    );
+    res.send(exported);
+  } catch (err: any) {
+    res.status(500).json({ error: "Export failed", details: err.message });
+  }
+});
+
+// Export single alert in requested format
+app.get("/api/export/alerts/:alert_id", requireApiKey, (req, res) => {
+  const format = (req.query.format || "jsonl") as string;
+  const alerts = readAlertsJsonl();
+  const alert = alerts.find((a) => a.alert_id === req.params.alert_id);
+
+  if (!alert) {
+    return res.status(404).json({ error: "Alert not found" });
+  }
+
+  try {
+    const exported = outputEngine.formatAlert(alert, format as any);
+    const contentType =
+      format === "csv"
+        ? "text/csv"
+        : format === "syslog"
+          ? "text/plain"
+          : "application/json";
+
+    res.setHeader("Content-Type", contentType);
+    res.send(exported);
+  } catch (err: any) {
+    res.status(500).json({ error: "Export failed", details: err.message });
+  }
+});
+
+// Batch export: stream alerts in CEF format (for SIEM integration)
+app.get("/api/export/stream/cef", requireApiKey, (req, res) => {
+  const limit = parseInt(req.query.limit as string) || 1000;
+  const alerts = readAlertsJsonl().slice(0, limit);
+
+  res.setHeader("Content-Type", "text/plain");
+  res.setHeader("Transfer-Encoding", "chunked");
+
+  for (const alert of alerts) {
+    const cefLine = outputEngine.formatAlert(alert, "cef") + "\n";
+    res.write(cefLine);
+  }
+
+  res.end();
+});
+
+// Batch export: stream alerts in Syslog format (for SIEM integration)
+app.get("/api/export/stream/syslog", requireApiKey, (req, res) => {
+  const limit = parseInt(req.query.limit as string) || 1000;
+  const alerts = readAlertsJsonl().slice(0, limit);
+
+  res.setHeader("Content-Type", "text/plain");
+  res.setHeader("Transfer-Encoding", "chunked");
+
+  for (const alert of alerts) {
+    const syslogLine = outputEngine.formatAlert(alert, "syslog") + "\n";
+    res.write(syslogLine);
+  }
+
+  res.end();
+});
+
+// Export format info and examples
+app.get("/api/export/formats", (req, res) => {
+  const exampleAlert = readAlertsJsonl()[0] || {
+    alert_id: "alt_example_1",
+    timestamp: new Date().toISOString(),
+    event: {
+      source_ip: "192.168.1.100",
+      destination_ip: "198.51.100.23",
+      source_port: 54321,
+      destination_port: 443,
+      protocol: "tcp",
+      username: "admin",
+    },
+    threat_level: "High",
+    threat_score: { score: 0.85, confidence: 0.9 },
+    summary: "Example security alert",
+  };
+
+  res.json({
+    supported_formats: ["jsonl", "cef", "stix", "csv", "syslog"],
+    descriptions: {
+      jsonl:
+        "Newline-delimited JSON (normalized alert schema, native format)",
+      cef: "Common Event Format (CEF) - Standard SIEM integration format",
+      stix:
+        "STIX 2.0 bundle format (threat intelligence exchange format)",
+      csv: "Comma-separated values with headers (spreadsheet import)",
+      syslog:
+        "RFC 5424 syslog format (for syslog collectors / SIEM ingestion)",
+    },
+    examples: {
+      jsonl: JSON.parse(outputEngine.formatAlert(exampleAlert, "jsonl")),
+      cef: outputEngine.formatAlert(exampleAlert, "cef"),
+      stix: JSON.parse(outputEngine.formatAlert(exampleAlert, "stix")),
+      csv:
+        "Header:\n" +
+        outputEngine.getCSVHeader() +
+        "\nRow:\n" +
+        outputEngine.formatAlert(exampleAlert, "csv"),
+      syslog: outputEngine.formatAlert(exampleAlert, "syslog"),
+    },
+    endpoints: {
+      export_all:
+        "GET /api/export/alerts?format=cef&limit=100&threat_level=High",
+      export_single: "GET /api/export/alerts/{alert_id}?format=stix",
+      stream_cef: "GET /api/export/stream/cef?limit=1000",
+      stream_syslog: "GET /api/export/stream/syslog?limit=1000",
+    },
+  });
+});
+
+// ============================================================================
+
 // VITE MIDDLEWARE / STATIC PRODUCTION SERVING
 
 // ----------------------------------------------------
-async function startServer() {
+export async function startServer() {
   if (process.env.NODE_ENV !== "production") {
+    // lazy-import Vite to avoid loading ESM-only module during tests
+    const { createServer: createViteServer } = await import('vite');
     const vite = await createViteServer({
       server: { middlewareMode: true },
       appType: "spa",
@@ -1914,9 +2078,15 @@ async function startServer() {
     });
   }
 
-  app.listen(PORT, "0.0.0.0", () => {
+  const server = app.listen(PORT, "0.0.0.0", () => {
     console.log(`[Cyber-EW Fusion Cell] Server running on http://localhost:${PORT}`);
   });
+  return server;
 }
 
-startServer();
+// Only auto-start when not running tests
+if (process.env.NODE_ENV !== "test") {
+  startServer().catch(err => console.error("Failed to start server:", err));
+}
+
+export default app;
